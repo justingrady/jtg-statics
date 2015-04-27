@@ -1,0 +1,334 @@
+
+.blockGrid4 .blockGridCol:nth-of-type(4n+1) {
+	margin-left: 0;
+	clear: left;
+}
+
+.blockGridCol {
+	background: #333;
+	float: left;
+	margin-left: .7%;
+	margin-bottom: 30px;
+	//height: 210px;
+	overflow: hidden;
+
+	//&:hover {
+	//	.blockGridHover {
+	//		display: block;
+	//	}
+	//}
+}
+
+.blockGridHover {
+	display: none;
+}
+@media (min-width: 768px) and (max-width: 10000px) {
+	.blockGridHover {
+		display: none;
+		background: #555;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		padding: 10px;
+		color: white;
+		font-size: 1.4em;
+		#blockGridPub {
+			font-size: .7em;
+			font-style: italic;
+		}
+	}
+}
+
+/* blockGrid4 blockGridCol */
+.blockGrid4 .blockGridCol {
+	width: 24.4%;
+	position: relative;
+}
+
+.blockGridCar .blockGridCol {
+	position: relative;
+}
+
+.blockGridCol {
+	a {
+		.holderDiv {
+			display: table;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			width: 100%;
+			text-align:center;
+
+			.blockTitleText {
+				display: table-cell;
+				vertical-align: bottom;
+				width: 100%;
+				color: white;				
+				padding-bottom: 15px;
+
+				.textWrapper {
+					background-color: rgba(50, 50, 50, .8);
+					//border-radius: 5px;
+					color: white;
+					width: 100%;
+					//margin-left: 5%;
+					padding: 5px;
+					text-align: center;
+					display: inline-block;
+					font-size: 1.3em;
+					line-height: 1.2em;
+
+					
+				}
+				
+			}
+		}
+	}
+}
+
+.blockTitleTextNoPhoto {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	width: 90%;
+	font-size: 2em;
+	color: white;
+}
+
+
+.blockGridColSlider {
+	background: #333;
+	float: left;
+	margin-left: .7%;
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+	a {
+		.blockTitleTextNoPhoto {
+			position: absolute;
+			top: 20%;
+			left: 5%;
+			width: 90%;
+			font-size: 1.5em;
+			color: white;
+			text-align: left;
+		}
+		.holderDiv {
+			display: table;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			width: 100%;
+			text-align:center;
+
+			.blockTitleText {
+				display: table-cell;
+				vertical-align: bottom;
+				width: 100%;
+				color: white;				
+				//padding-bottom: 15px;
+
+				.textWrapper {
+					background-color: rgba(50, 50, 50, .8);
+					color: white;
+					width: 100%;
+					padding: 5px;
+					text-align: center;
+					display: inline-block;
+					font-size: 1em;
+					line-height: 1.2em;
+				}
+				
+			}
+		}
+	}
+}
+
+.blockGridColBlob {
+	background: #333;
+	float: left;
+	margin-left: .7%;
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+	a {
+		.blockTitleTextNoPhoto {
+			position: absolute;
+			top: 20%;
+			left: 5%;
+			width: 90%;
+			font-size: 1.5em;
+			color: white;
+			text-align: left;
+		}
+		.holderDiv {
+			display: table;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			width: 100%;
+			text-align:center;
+
+			.blockTitleText {
+				display: table-cell;
+				vertical-align: bottom;
+				width: 100%;
+				color: white;				
+				//padding-bottom: 15px;
+
+				.textWrapper {
+					background-color: rgba(50, 50, 50, .8);
+					color: white;
+					width: 100%;
+					padding: 5px;
+					text-align: center;
+					display: inline-block;
+					font-size: 1em;
+					line-height: 1.2em;
+				}
+				
+			}
+		}
+	}
+}
+
+.blockGridAd {
+	border: 2px solid black;
+	background: white;
+	text-align: center;
+}
+
+.citySpWidget {
+	height: 270px;
+}
+
+@media (min-width: 1356) and (max-width: 19000) {
+	.citySpWidget {
+		height: 270px;
+	}
+}
+
+@media (min-width: 1184px) and (max-width: 1355px) {
+	.blockGrid4 .blockGridCol {
+		margin-left: 1.7%;
+		width: 31.2%;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(3n+1) {
+		margin-left: 1.7%;
+		clear: none;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(4n+1) {
+		margin-left: 1.7%;
+		clear: none;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(3n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+	.blockGridAd {
+		background-color: #eee;
+	}
+	.citySpWidget {
+		height: 292px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1183px) {
+	.blockGrid4 .blockGridCol {
+		width: 32.8%;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(2n+1) {
+		margin-left: .7%;
+		clear: none;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(4n+1) {
+		margin-left: .7%;
+		clear: none;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(3n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+	.blockGridAd {
+		background-color: #eee;
+	}
+	.citySpWidget {
+		height: 256.7px;
+	}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+	.blockGrid4 .blockGridCol:nth-of-type(1n+1) {
+		margin-left: 2.6%;
+		clear: none;
+	}
+	.blockGrid4 .blockGridCol {
+		margin-left: 2.6%;
+		width: 48.4%;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(3n+1) {
+		//margin-left: .7%;
+		clear: none;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(2n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+	.blockGridAd {
+		background-color: #eee;
+	}
+	.citySpWidget {
+		height: 290px;
+	}
+}
+
+@media (max-width: 767px) {
+	/* change grid4 to 2-column */
+	.blockGrid4 .blockGridCol {
+		width: 95%;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(2n+1) {
+		//margin-left: .7%;
+		clear: none;
+	}
+	.blockGrid4 .blockGridCol:nth-of-type(1n+1) {
+		margin-left: 2%;
+		clear: left;
+	}
+	.citySpWidget {
+		height: 230px;
+	}
+}
+
+.popTimeFrame {
+	margin-bottom: 1.6em;
+	.timeFrameList {
+		text-decoration: none;
+		list-style-type: none;	
+		padding-left: 0px;
+		.timeFrameItem {
+			display: inline;
+			a {
+				text-decoration: none;
+				padding: .4em 1.5em;
+				color: #fff;
+				background-color: #428bca;
+				border-radius: 4px;
+
+				&:hover {
+					color: #fff;
+					background-color: #369;
+				}
+			}
+		}
+		.timeFrameInstructions {
+			font-size: 1.2em;
+			font-weight: bold;
+			margin-right: 4px;
+		}
+	}
+}
+

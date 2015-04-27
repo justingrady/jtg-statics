@@ -1,0 +1,115 @@
+$assetPath: 'http://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_schedule';
+
+
+.alpineskiing a {background: url('#{$assetPath}/images/Alpine-Skiing-icn.png') no-repeat 4px center;}
+
+.biathlon a {background: url('#{$assetPath}/images/Biathlon-icn.png') no-repeat 4px center;}
+
+.bobsledding a {background: url('#{$assetPath}/images/Bobsled-icn.png') no-repeat 4px center;}
+
+.cross-countryskiing a {background: url('#{$assetPath}/images/Cross-Country-Skiing-icn.png') no-repeat 4px center;}
+
+.curling a {background: url('#{$assetPath}/images/Curling-icn.png') no-repeat 4px center;}
+
+.figureskating a {background: url('#{$assetPath}/images/Figure-Skating-icn.png') no-repeat 4px center;}
+
+.freestyleskiing a {background: url('#{$assetPath}/images/Freestyle-Skiing-icn.png') no-repeat 4px center;}
+
+.hockey a {background: url('#{$assetPath}/images/Ice-Hockey-icn.png') no-repeat 4px center;}
+
+.luge a {background: url('#{$assetPath}/images/Luge-icn.png') no-repeat 4px center;}
+
+.nordiccombined a {background: url('#{$assetPath}/images/Nordic-Combined-icn.png') no-repeat 4px center;}
+
+.shorttrackspeedskating a {background: url('#{$assetPath}/images/Short-Track-Speed-Skating-icn.png') no-repeat 4px center;}
+
+.skeleton a {background: url('#{$assetPath}/images/Skeleton-icn.png') no-repeat 4px center;}
+
+.skijumping a {background: url('#{$assetPath}/images/Ski-Jumping-icn.png') no-repeat 4px center;}
+
+.snowboarding a {background: url('#{$assetPath}/images/Snowboard-icn.png') no-repeat 4px center;}
+
+.speedskating a {background: url('#{$assetPath}/images/Speed-Skating-icn.png') no-repeat 4px center;}
+
+div.olympicsfeature {
+	padding-bottom: 1.5em;
+	border-bottom: 1px dotted #ccc;
+	margin: 1em 0;
+}
+
+.ap_widget .full-schedule-link a {
+	display: block;
+	background: #0e8fcc;
+	color: #fff !important;
+	text-align: center;
+	/*
+	font-family: 'Raleway', serif;
+	font-weight: 700;
+	font-size: 12px;
+	*/
+	padding: 8px;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+.ap_widget .full-schedule-link a:hover {
+	background: #146994;
+}
+
+/******Upcoming Events widget*******/
+
+.ap_widget .event {
+	border: 1px #d5d5d5 solid;
+	margin-bottom: 10px;
+}
+
+.ap_widget .event a {
+	display: block;
+	min-height: 40px;
+	padding: 3px 0 3px 46px;
+	/*
+	color: #0089ca;
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: 600;
+	text-decoration: none;
+	font-family: 'Raleway', serif;
+	*/
+}
+
+.ap_widget .event a:hover {
+	color: #146994;
+	background-color: #e5e5e5;
+}
+
+.ap_widget .event a span {
+	display: block;
+	color: #000;
+	font-size: 10px;
+}
+
+.ap_widget .event a span em {
+	color: red;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.ap_widget .event a .date {
+	margin-top: 2px;
+}
+
+ .ap_widget a, .ap_widget p, .ap_widget ul, .ap_widget ol, .ap_widget li,
+ .ap_widget img, .ap_widget span, .ap_widget strong, .ap_widget em {
+	border: 0 none;
+	font: inherit;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+	vertical-align: baseline;
+	list-style-type: none;
+}
+
+div.time-row.row,
+div.tv-row.row {
+	margin: auto !important;
+}
+

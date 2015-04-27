@@ -1,0 +1,110 @@
+$lsMargins: 0 1.5em 0 0;
+
+
+.breakingImage-vert-center-cropped{
+  float:left;
+  margin: $lsMargins;
+  // margin-right: 10px;
+  width: 300px;      //  220/.73 = 302
+  height: 350px;
+  overflow: hidden;
+  //position: relative;
+
+  img {
+    //position:absolute;
+    top: -20px;
+    left: -55px;
+    //width:220;
+  }
+}
+
+.breakingImage-horiz-center-cropped {
+  float:left;
+  margin: $lsMargins;
+  height: auto;
+
+  //position: relative;
+
+  img {
+    //position:absolute;
+    overflow: hidden;
+    
+  }
+}
+
+.topImage-vert-center-cropped{
+  float:left;
+  margin: $lsMargins;
+  width: 220px;      //  220/.73 = 302
+  height: 250px;
+  overflow: hidden;
+  //position: relative;
+
+  img {
+    //position:absolute;
+    top: -20px;
+    left: -55px;
+    //width:220;
+  }
+}
+
+.topImage-horiz-center-cropped {
+  float:left;
+  margin: $lsMargins;
+  height: 180px;
+
+  //position: relative;
+
+  img {
+    //position:absolute;
+    
+  }
+}
+
+.listImage-vert-center-cropped {
+  float:left;
+  margin: $lsMargins;
+  // margin-right: 10px;
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+  //position: relative; - for cropping center, not actually doing yet
+
+  img {
+      //position:absolute; - for cropping center, not actually doing yet
+      top: -30px;
+      left: -20px;
+  }
+}
+
+.listImage-horiz-center-cropped {
+  float: left;
+  margin: $lsMargins;
+  // height: 125px;
+  //position: relative;  - for cropping center, not actually doing yet
+
+  img {
+    //position:absolute; - for cropping center, not actually doing yet
+  }
+}
+
+// listStory.csp and topStory.csp - thumbnails for mobile devices ///////////////////////////////////
+
+div.smallScreen {
+    display: none;
+    margin:0;
+}
+
+@media (min-width: 461px) and (max-width: 767px) {
+    div.smallScreen {
+      display: inline;
+      margin: 0;
+    }
+}
+    
+  @media (min-width: 200px) and (max-width: 460px) {
+    div.smallScreen {
+      display: inline;
+      margin:0;
+    }
+}

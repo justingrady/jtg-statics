@@ -1,0 +1,17 @@
+<!--
+<div class="weather" style="background: url(http://statics.bendbulletin.com/weather/graphics/masthead/<TMPL_VAR NAME="ICON">.png) top left no-repeat;">
+        <a href="http://tbb-db1.tbb.us1.dti/weather/"><div></div></a>
+        <h3><TMPL_VAR NAME="TEMP">&deg; F <span><TMPL_VAR NAME="DESC"></span></h3>
+        <p><a href="http://tbb-db1.tbb.us1.dti/weather/">Complete Central Oregon Forecast</a></p>
+</div> --> <!-- weather time:<TMPL_VAR NAME="TIMESTAMP"> -->
+<div class="row masthead">
+	<div class="col-sm-5 col-md-4 masthead-icon">
+		<a href="/weather/">
+			<img src="http://statics.bendbulletin.com/weather/graphics/masthead/<TMPL_VAR NAME="ICON">.png">
+		</a>
+		<h4 class="media-heading masthead-temp"><TMPL_VAR NAME="TEMP">&deg; F </h4>
+	</div>
+	<div class="col-sm-7 col-md-8 masthead-body">
+		<a href="/weather/">View the complete Central Oregon forecast</a>
+	</div>
+</div> 

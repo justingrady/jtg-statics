@@ -1,0 +1,55 @@
+$normal: 1em;
+$big: 1.3em;
+$bigger: 1.6em;
+$huge: 2em;
+$small: .8em;
+$tiny: .5em;
+
+.PULSE_body_copy {
+	font-size: $normal;
+}
+
+/*p.PULSE_body_w_drop_cap:first-letter {
+	float:left;
+	font-size: $huge;
+	padding-top: 4px;
+	padding-right: 8px;	
+}*/
+
+.PULSE_chap_head {
+	font-weight: bold;
+}
+
+.PULSE_h1 {
+	font-weight: bold;
+	font-size: $huge;
+}
+
+.PULSE_tool_box_text {
+	font-size: $normal
+}
+
+.PULSE_tool_box_head {
+	font-weight: bold;
+	font-size: $big;
+}
+.PULSE_tool_box_bold {
+	font-weight: bold;
+}
+
+.PULSE_source_line {
+	font-size: $small;
+}
+
+.PULSE_caption {
+
+}
+
+.PULSE_photo_credit {
+	text-align: right;
+	font-size: $small;
+}
+
+.PULSE_byline {
+	
+}

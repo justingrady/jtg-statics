@@ -1,0 +1,39 @@
+<!--weather_forecast.html
+<div style="margin-bottom: 10px;" class="hed">
+        <div style="float: left; margin-right: 10px; margin-bottom: 10px;"><TMPL_IF NAME="ICON"><img src="http://statics.bendbulletin.com/weather/graphics/masthead/<TMPL_VAR NAME="ICON">.png"/></TMPL_IF></div>
+        <h1><TMPL_VAR NAME="HED"></h1>
+        <div style="clear: left;"> </div>
+</div>
+<p><TMPL_VAR NAME="DAY"> - <TMPL_VAR NAME="DESC"></p>
+<TMPL_IF NAME="HITEMP"><span class="bold">High:</span> <TMPL_VAR NAME="HITEMP">&deg; F<br/></TMPL_IF>
+<TMPL_IF NAME="LOTEMP"><span class="bold">Low:</span> <TMPL_VAR NAME="LOTEMP">&deg; F<br/></TMPL_IF>
+<TMPL_IF NAME="POP"><span class="bold">Chance of precipitation:</span> <TMPL_VAR NAME="POP">%<br/></TMPL_IF>
+<TMPL_IF NAME="WSPEED"><span class="bold">Wind Speed:</span> <TMPL_VAR NAME="WSPEED"> MPH<br/></TMPL_IF>
+<TMPL_IF NAME="WDIR"><span class="bold">Wind Direction:</span> <TMPL_VAR NAME="WDIR"><br/></TMPL_IF>
+<TMPL_IF NAME="SUNRISE"><span class="bold">Sunrise:</span> <TMPL_VAR NAME="SUNRISE"><br/></TMPL_IF>
+<TMPL_IF NAME="SUNSET"><span class="bold">Sunset:</span> <TMPL_VAR NAME="SUNSET"><br/></TMPL_IF>
+-->
+<!-- weather time:<TMPL_VAR NAME="TIMESTAMP"> -->
+ 
+
+<div class="col-md-4">
+	<div class="mast row">
+		<div class="topIcon col-xs-4">
+			<TMPL_IF NAME="ICON"><img src="http://statics.bendbulletin.com/weather/graphics/masthead/<TMPL_VAR NAME="ICON">.png"/></TMPL_IF>
+		</div>
+		<div class="textDescHead col-xs-8">
+			
+			<h3><TMPL_VAR NAME="HED"></h3>
+		</div>
+	</div>
+	<div class="textDescBody">
+		<p><TMPL_VAR NAME="DAY"> - <TMPL_VAR NAME="DESC"></p>
+		<TMPL_IF NAME="HITEMP"><span class="bold">High:</span> <TMPL_VAR NAME="HITEMP">&deg; F<br/></TMPL_IF>
+		<TMPL_IF NAME="LOTEMP"><span class="bold">Low:</span> <TMPL_VAR NAME="LOTEMP">&deg; F<br/></TMPL_IF>
+		<TMPL_IF NAME="POP"><span class="bold">Chance of precipitation:</span> <TMPL_VAR NAME="POP">%<br/></TMPL_IF>
+		<TMPL_IF NAME="WSPEED"><span class="bold">Wind Speed:</span> <TMPL_VAR NAME="WSPEED"> MPH<br/></TMPL_IF>
+		<TMPL_IF NAME="WDIR"><span class="bold">Wind Direction:</span> <TMPL_VAR NAME="WDIR"><br/></TMPL_IF>
+		<TMPL_IF NAME="SUNRISE"><span class="bold">Sunrise:</span> <TMPL_VAR NAME="SUNRISE"><br/></TMPL_IF>
+		<TMPL_IF NAME="SUNSET"><span class="bold">Sunset:</span> <TMPL_VAR NAME="SUNSET"><br/></TMPL_IF>
+	</div>
+</div>

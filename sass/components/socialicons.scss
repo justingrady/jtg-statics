@@ -1,0 +1,170 @@
+.nlinfo {
+	display: none;
+}
+
+@mixin nlinfobox($bkcolor,$txcolor) {
+	display: block;
+	padding: 0 15px;
+	.emailStepNotifer {
+		border: 5px solid #cccccc;
+		/* border-radius: 10px; */ 
+		padding: 0 0.5em 0.25em 1.25em;
+		margin: 0 0 0 0;
+		background-color: $bkcolor;
+		color: $txcolor;
+		font-size: 1.2em;
+	}
+
+	a {
+		color: $txcolor;
+		text-decoration: underline;
+	}
+}
+
+.nlinfo-step {
+	@include nlinfobox(#FF9900,#000000);
+}
+
+.nlinfo-alert {
+	@include nlinfobox(#ffff00,#000000);
+}
+
+.nlinfo-success {
+	@include nlinfobox(#009900,#ffffff);
+}
+
+.newsletterbutton {
+	margin: 1em 0 0 0;
+
+	a {
+		text-shadow: 1px 1px 0px rgba(51,51,51,0.75);
+		width: 100%;
+		font-weight: normal;
+	}
+}
+
+.railnewsletter {
+	background-color: #4a4a4a;
+	margin: 1em 0 0 0;
+	color: #ffffff;
+	padding: 0.25em 1em 1em 1em;
+
+	h4 {
+		margin: 0 0 0.75em 0;
+	}
+
+	.rnthumb {
+		padding: 0.5em;
+		background-color: #ffffff;
+		border-radius: 10px;
+		width: 170px;
+		float: left;
+	}
+
+	p {
+		float: left;
+		margin: 0 1em 1em 1em;
+		width: 130px;
+	}
+
+	form {
+		margin: 1em 0 0 0;
+	}
+
+}
+
+
+.railnewsletterdev {
+	background-color: #4a4a4a;
+	margin: 1em 0 0 0;
+	color: #ffffff;
+	padding: 0.25em 1em 1em 1em;
+
+	h4 {
+		margin: 0 0 0.75em 0;
+	}
+
+	.rnthumb {
+		img {
+			border-radius: 1em;
+		}
+	}
+
+	p {
+		margin: 0 0;
+	}
+
+	form {
+		margin: 1em 0 0 0;
+	}
+
+}
+
+.railsocial {
+	margin: 0 0 1em 0;
+	background-color: #333333;
+	color: #ffffff;
+	padding: 0.25em 1em 1em 1em;
+	border: 1px solid #333333;
+
+	h4 {
+		margin: 0 0 0.75em 0;
+	}
+
+	
+	.socialicons {
+		// margin: 1em 0 0 0;
+		// padding: 0.5em 0 0 0;
+		// border-top: 1px dotted #ffffff;
+	}
+}
+
+.footersocial {
+	margin: 1em 0;
+
+	button {
+		margin: 0 0.25em 0 0;
+	}
+}
+
+
+
+@mixin chiclet($color) {
+	border-radius: 3px;
+	border: 1px solid #333333;
+	color: #ffffff;
+	background-color: $color;
+	font-size: 26px;
+	text-align: center;
+	width: 35px;
+	height: 35px;
+	line-height: 1.35em;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+	margin: 0 0.1em 0 0;
+	&:hover {
+		background-color: darken($color, 10%);
+	}
+
+}
+
+
+.chiclet-facebook {
+	@include chiclet(#2591FF);
+}
+
+.chiclet-twitter {
+	@include chiclet(#25CEFF);
+}
+
+.chiclet-pinterest {
+	@include chiclet(#CD2129);
+}
+
+.chiclet-youtube {
+	@include chiclet(#A80202);
+}
+
+.chiclet-instagram {
+	@include chiclet(#000000);
+
+}

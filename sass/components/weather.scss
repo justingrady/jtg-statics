@@ -1,0 +1,109 @@
+	.map > img {
+		width:100%;
+	}
+	
+	.mast {
+		height: 70px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		padding-left: 2px;
+		padding-right: 0px;
+
+		.topIcon {
+			text-align: center;
+			padding-top: 10px;
+			padding-left: 0px;
+		}
+	}
+	.weatherGrid {
+		border: double;
+		margin-top: 10px;
+		height: 300px;
+		
+	}
+	.textDesc {
+		padding-bottom: 10px;
+		//height: 100%;
+	}
+	
+	.locationMenu {
+		margin-right: 10px;
+
+		ul {
+			margin-right: 8px;
+
+			li {
+				float:left;
+				padding-right:10px;
+				list-style-type: none;
+			}
+		}
+	}
+
+	#locations {
+		margin-top: 10px;
+	}
+	
+	.mainForecast {
+
+		margin-top:20px;
+		width: 97%;
+	}
+
+	.webCams {
+		margin-top:20px;
+		width: 97%;
+	}
+
+	.hed {
+		h1 {
+			font-size: 1.5em;
+		}
+	}
+
+	.masthead {
+		.masthead-icon {
+			.masthead-temp {
+				text-align: center;
+			}
+		}
+		.masthead-body {
+			padding-left: 0px;
+			padding-top: 8px;
+		}
+
+	}
+
+.weatherAreaTitle {
+	color: #870e06;
+	background-color: #ececec;
+	border: 1px solid #cccccc;
+	padding: 0.25em 0.5em;
+	margin: 0 auto;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 3px;
+	font-family: "Open Sans Condensed", "Open Sans";
+
+	ul {
+		margin: 0 auto;
+
+		li {
+			padding-right: 10px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #870e06;
+		&:hover {
+			text-decoration:none;
+		}
+	}
+}
+	
+
+	
+
+	
+

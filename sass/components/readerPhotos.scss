@@ -1,0 +1,43 @@
+.readerFrame {
+	width: 100%;
+	height: 1600px;
+	border: none;
+}
+
+.infoHead {
+    background-color:blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a.contestSubmit {
+ 	background-color: #428bca;
+	color: #FFFFFF;
+	font-style: bold;
+	text-transform: uppercase;
+	padding: 5px 10px 5px 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+a.contestSubmit:hover {
+	background-color: #357ebd;
+}
+
+@media (min-width: 768px) and (max-width: 7000px) {
+	.contestSubmitButton {
+		margin-bottom: 8px;
+	}
+	.readerFrame {
+		margin-top: 20px;
+	}
+}
+@media (min-width: 100px) and (max-width: 767px) {
+	.contestSubmitButton {
+		margin-bottom: 0px;
+	}
+	.readerFrame {
+		margin-top: 0px;
+	}
+}

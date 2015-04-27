@@ -1,0 +1,376 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// $bulletinRed: rgb(135, 14, 6);
+$bulletinRed: #870e06;
+
+@import "compass/css3/images";
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800|Open+Sans+Condensed:300,300italic,700);
+// @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"); 
+// @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+//@import "compass/reset";
+// Include bootstrap
+@import "vendor/bootstrap";
+
+@import "components/topnavigation";
+@import "components/adunits";
+@import "components/masthead";
+@import "components/datepicker";
+//@import "components/lightbox";
+@import "components/carousel";
+@import "components/events";
+@import "components/homePageGrid";
+@import "components/restaurantGolfSearch";
+@import "components/weather";
+@import "components/summaryLayoutsText";
+@import "components/summaryLayoutsImages";
+@import "components/fullStoryLayout";
+@import "components/printStylesForWeb";
+@import "components/rtRail";
+@import "components/staffBio";
+@import "components/slideShowLayout";
+@import "components/mobileSmall";
+@import "components/ap-widget-marchmadness";
+@import "components/videoPage";
+@import "components/PulseStylesForWeb";
+@import "components/outbrain";
+@import "components/classifieds";
+@import "components/elections";
+@import "components/pppStyles";
+@import "components/couponPage";
+@import "components/movingSlider";
+@import "components/bootstrapValidator";
+@import "components/newsletterforms";
+@import "components/socialicons";
+@import "components/bigStoryLayout";
+@import "components/readerPhotos";
+@import "components/registrationpage";
+@import "components/blockGrid";
+@import "components/one_off_classes";
+@import "components/submitinfo";
+@import "components/teenSite";
+
+#leader {
+    margin: 5 auto;
+}
+
+#header {
+    @include masthead
+}
+
+#nav {
+    .navbar-brand { 
+        display: none;
+        color: black;
+    }
+
+    &.navbar-fixed-top .navbar-brand {
+        display: block;
+        padding: 5px 0;
+    }
+}
+
+.frontpageContainer {
+	margin-top: 1em;
+}
+
+.bullBread {
+    margin-bottom: 0px;
+}
+.sectionTitle {
+    margin: 0 0 1em 0;
+    padding: 0 0 0.5em;
+    color: #666666;
+    border-bottom: 1px dotted #ececec;
+    // margin-bottom: 40px;
+    // margin-top: 0px;
+    // background-color: #ECECEC;
+    // color: rgb(135, 14, 6);
+    // border-top-style: solid;
+    // border-top-color: #888888;
+    // border-top-width: 5px;
+    // padding: 5px;
+    // padding-left: 20px;
+
+}
+
+.ap-headline {
+    background-color: #CCCCCC;
+    border-radius: 5px;
+}
+
+.classFeat {
+  background-color: #ECECEC;
+  border: 1px solid #CCCCCC;
+  padding: 0.5em;
+  margin: 0 0 1em 0;
+  font-size: 12px;
+  ul {
+    padding: 0;
+    list-style-image: none;
+    list-style-type: none;
+    li {
+      margin: 0 5px 15px 5px;
+      padding: 0 !important;
+      float: left;
+      background-image: none !important;
+      width: 4.85em;
+      text-align: center;
+      a {
+        img {
+          border: 1px solid #035CB6;
+          background-color: #FFFFFF;
+          padding: 0.25em;
+        }
+        &:hover {
+          img {
+            border: 1px solid #059AE8;
+            background-color: #035CB6;
+          }
+        }
+        p {
+          margin: 0;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  a.btn {
+    margin: 0 5px 20px 0;
+  }  
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover { 
+  outline: 0;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+#centerAlign{
+    margin: 0 auto;
+    width: 75%;
+    margin-bottom:30px;
+    padding-top: 10px;
+}
+
+
+@media (min-width: 200px) and (max-width: 767px) {
+    #publicNotices {
+        display: none;
+    }
+
+}
+
+
+.printPhotos {
+  padding-top: 10px;
+}
+
+.rail-media { 
+        padding-top: 5px;
+        overflow: hidden;
+        zoom: 1;
+        margin-left: 5px;
+        text-align:left;
+        font-size: .75em;
+
+        a {
+          padding-right: 5px;
+        }
+}
+  
+.rail-media-body{
+    text-align:left;
+
+    a {
+     font-size: 1.2em;
+     text-decoration: none;
+    }
+}
+
+.smallMedia { 
+        padding-top: 5px;
+        overflow: hidden;
+        zoom: 1;
+        margin-left: 5px;
+        text-align:left;
+        font-size: .75em;
+
+        a {
+          padding-right: 5px;
+          font-size: 1.2em;
+          text-decoration: none;
+        }
+}
+  
+.thumbtext {
+    font-size: .95em;
+}
+
+.searchResults {
+    font-size: 1.5em;
+}
+
+
+@media (min-width: 768px) {
+li.dropdown:hover ul.dropdown-menu {
+      display:block;
+      //background-color: black;
+    }
+}
+
+
+/////////// footer   ///////////////////////////////////////////////////////////////////////////////
+
+#footer {
+    // Since this is used twice make it a variable. If the style changes you only have to make the change in one spot
+    $border-style: 1px dotted #cccccc;
+    $footer-heder: 'Open Sans Condensed', sans-serif;
+    $footer-text: HelveticaNeue, Helvetica, Arial , sans-serif;
+
+    font-family: $footer-text;
+
+    color: #fff;
+    background-color: #4A4A4A;
+    margin-top: 15px;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    h4 {
+        padding-bottom: 5px;
+        margin: 15px 0 10px 0;
+	border-bottom: $border-style;
+        font-family: $footer-heder;
+    }
+
+    hr {
+        border-top: $border-style;
+    }
+
+    ul.social {
+        li {
+            list-style: none;
+            float: left;
+            margin-right: 10px;
+
+            a {
+                text-indent: -9999px;
+                text-decoration: none;
+                //background-color: #000;
+                height: 32px;
+                width: 32px;
+                display: block;
+                @include border-radius(3px);
+
+                color: #fff;
+            }
+
+            $lighten-percent: 10%;
+            &.facebook a {
+                $bg-color: #2591ff;
+                background-color: $bg-color;
+
+                &:hover {
+                    background-color: lighten($bg-color, $lighten-percent);
+                }
+            }
+
+            &.twitter a {
+                $bg-color: #25ceff;
+                background-color: $bg-color;
+
+                &:hover {
+                    background-color: lighten($bg-color, $lighten-percent);
+                }
+            }
+
+            &.youtube a {
+                $bg-color: #a80202;
+                background-color: $bg-color;
+
+                &:hover {
+                    background-color: lighten($bg-color, $lighten-percent);
+                }
+            }
+
+            &.rss a {
+                $bg-color: #ef843d;
+                background-color: $bg-color;
+
+                &:hover {
+                    background-color: lighten($bg-color, $lighten-percent);
+                }
+            }
+        }
+    }
+
+    .footer-subscribe {
+        margin-top: 3em;
+        font-family: $footer-text;
+	font-weight: normal;
+
+        p {
+          margin: 15px 0;
+          font-size: 14px; 
+        }
+
+        a.btn {
+          font-size: 2.5em;
+        }
+
+    }
+
+    .footer-bottom .nav {
+        a {
+            padding: 1px 10px;
+            font-size: 12px;
+
+            &:hover {
+                text-decoration: underline;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .footer-copyright {
+        margin: 0 0 15px 0;
+        color: #cccccc;
+    }
+
+}
+
+.tab-content {
+	margin: 0 0 1em 0;
+}
+
+.navHomeIcon {
+	font-size: 1.2em;
+	line-height: 1em;
+}
+
+.listStoryAP {
+	img {
+		margin: 5px 10px 0 0;
+	}
+}

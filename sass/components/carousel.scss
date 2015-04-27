@@ -1,0 +1,760 @@
+/* shrink these for smaller screen size by multiplication */
+$carouselHeight: 540px;
+$frontCaptionHeight: 70px;
+$frontCaptionLineHeight: 1em;
+$frontCaptionFontSize: 1.8em; 
+$frontSubFontSize: 1em;
+$captionPadding: 15px;
+$captionNoPhotoPadding: 40px;
+$pLineHeight: 1.2;
+$pFontSize: 1.5em;
+$pPaddingLeft: 60px;
+$pPaddingRight: 50px;
+$pPaddingTop: 50px;
+$h1LineHeight: 1.3;
+$h1FontSize: 2.2em;
+$h1PaddingLeft: 60px;
+$h1PaddingRight: 40px;
+$h1PaddingTop: 120px;
+$fullStoryLeadLineHeight: 1;
+$fullStoryLeadFontSize: 1em;
+$fullStoryLeadPaddingTop: 10px;
+$fullStoryH1LineHeight: 1;
+$fullStoryH1FontSize: .8em;
+$fullStoryH1PaddingBottom: 5px;
+
+
+$ratioSize461_767: .75;
+$ratioSize200_460: .5;
+
+
+/////////////////////////////////////////////////////////////
+//     buildCarousel.csp  -- home page layout
+/////////////////////////////////////////////////////////////
+.carouselProd {
+    .center-y { 
+        vertical-align: middle;
+    }
+
+    .carousel#homeCarousel {
+        background-color: #000000;
+        width: 100%;
+        height: $carouselHeight;
+        //overflow: hidden;
+        overflow: visible;
+        position: relative;
+        margin: 0 0;
+        margin-bottom: 2em;
+
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration:none;
+        }
+
+        .item {
+            background-color: transparent;
+            height: $carouselHeight;
+
+            img {
+                //width: 100%;
+                //max-width: 100%;
+
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .carousel-caption-photo {
+            padding: 0;
+            background-color: black;
+            //opacity: .80;
+            opacity: .75;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            height: $frontCaptionHeight;
+            top: $carouselHeight - $frontCaptionHeight;
+            padding-left: $captionPadding;
+            padding-right: $captionPadding;
+            padding-top: $captionPadding;
+            z-index: 16;
+
+            h1 {
+                line-height: $frontCaptionLineHeight;
+                font-size: $frontCaptionFontSize;
+                vertical-align: middle;
+                padding: 0px;
+                margin: 0;
+                text-align: center;
+                color: #fff;
+                //text-shadow: 0 1px 1px rgba(0,0,0,.4);
+            }
+
+            p {
+                color: #FFFFFF;
+                text-align: center;
+                font-size: $frontSubFontSize;
+                padding-top: 10px;
+            }
+        }
+
+
+
+        .carousel-caption-noPhoto2 {
+            //padding-top: $captionNoPhotoPadding;
+            //background-image: url("http://statics.bendbulletin.com/images/sportsBackground.jpg");
+            background-color: #333333;
+            padding: $captionNoPhotoPadding;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            height: $carouselHeight;
+            top: 0;
+            text-align: left;
+
+            .carousel-black {
+                //background-color: rgba( 0, 0, 0, 0.8);
+                background-color: #333333;
+                width: 100%;
+                height: $carouselHeight;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+
+                p.lead {
+                    line-height: $pLineHeight;
+                    font-size: $pFontSize;
+                    padding-left: $pPaddingLeft;
+                    padding-right: $pPaddingRight;
+                    padding-top: $pPaddingTop;
+                    color: #fff;
+                    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+                }
+
+                h1 {
+                    line-height: $h1LineHeight;
+                    font-size: $h1FontSize;
+                    padding-left: $h1PaddingLeft;
+                    padding-top: $h1PaddingTop;
+                    padding-right: $h1PaddingRight;
+                    color: #fff;
+                    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+                }
+
+                p {
+                    color: #DDDDDD;
+                    text-align: left;
+                    padding-left: $pPaddingLeft + 20px;
+                    font-size: $frontSubFontSize * 1.2;
+                }
+
+                .mug-image {
+                    text-align: right;
+                    img {
+                        background-color: #333333;
+                        padding-left: 75px;
+                        padding-top: 50px;
+                        
+                        width: 200px !important;
+                    }
+                }
+
+                .mug-lead {
+                    font-size: 1.3em;
+                    padding-left: 8px !important;
+                    padding-right: 30px;
+                    padding-top: 50px;
+                }
+            }     
+
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////
+//     buildCarousel.csp  -- home page layout -- TEST BONEYARD
+/////////////////////////////////////////////////////////////
+
+
+.carouselDev {
+    .carousel#homeCarouselTest {
+        background-color: #000088;
+        width: 100%;
+        height: $carouselHeight;
+        overflow: hidden;
+        //overflow: visible;
+        position: relative;
+        margin: 0 0;
+        margin-bottom: 2em;
+
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            display: inline !important;
+            //height: auto;
+            max-width: auto !important;
+            //line-height: 1;
+        }
+
+        .carousel-inner {
+
+            .item {
+                background-color: transparent;
+                height: $carouselHeight;
+
+                a {
+                    text-decoration:none;
+                }
+                
+            }
+        }
+
+        a {
+            text-decoration:none;
+        }
+
+        .carousel-caption-photo {
+            padding: 0;
+            background-color: black;
+            //opacity: .80;
+            opacity: 1;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            height: $frontCaptionHeight;
+            top: $carouselHeight - $frontCaptionHeight;
+            padding-left: $captionPadding;
+            padding-right: $captionPadding;
+            padding-top: $captionPadding;
+            z-index: 16;
+
+            h1 {
+                line-height: $frontCaptionLineHeight;
+                font-size: $frontCaptionFontSize;
+                vertical-align: middle;
+                padding: 0px;
+                margin: 0;
+                text-align: center;
+                color: #fff;
+                //text-shadow: 0 1px 1px rgba(0,0,0,.4);
+            }
+
+            p {
+                color: #FFFFFF;
+                text-align: center;
+                font-size: $frontSubFontSize;
+                padding-top: 10px;
+            }
+        }
+
+
+
+        .carousel-caption-noPhoto2 {
+            //padding-top: $captionNoPhotoPadding;
+            //background-image: url("http://statics.bendbulletin.com/images/sportsBackground.jpg");
+            background-color: #333333;
+            padding: $captionNoPhotoPadding;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            height: $carouselHeight;
+            top: 0;
+            text-align: left;
+
+            .carousel-black {
+                //background-color: rgba( 0, 0, 0, 0.8);
+                background-color: #333333;
+                width: 100%;
+                height: $carouselHeight;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+
+                p.lead {
+                    line-height: $pLineHeight;
+                    font-size: $pFontSize;
+                    padding-left: $pPaddingLeft;
+                    padding-right: $pPaddingRight;
+                    padding-top: $pPaddingTop;
+                    color: #fff;
+                    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+                }
+
+                h1 {
+                    line-height: $h1LineHeight;
+                    font-size: $h1FontSize;
+                    padding-left: $h1PaddingLeft;
+                    padding-top: $h1PaddingTop;
+                    padding-right: $h1PaddingRight;
+                    color: #fff;
+                    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+                }
+
+                p {
+                    color: #DDDDDD;
+                    text-align: left;
+                    padding-left: $pPaddingLeft + 20px;
+                    font-size: $frontSubFontSize * 1.2;
+                }
+
+                .mug-image {
+                    text-align: right;
+                    img {
+                        background-color: #333333;
+                        padding-left: 75px;
+                        padding-top: 50px;
+                        
+                        width: 160px !important;
+                    }
+                }
+
+                .mug-lead {
+                    font-size: 1.3em;
+                    padding-left: 8px !important;
+                    padding-right: 30px;
+                    padding-top: 50px;
+                }
+            }     
+
+        }
+    }
+
+}
+
+/////////////////////////////////////////////////////////////
+//     buildStoryCarousel.csp  -- full story layout
+/////////////////////////////////////////////////////////////
+    
+#sectionPageCarousel {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    background-color: #ffffff !important;
+
+    height: auto;
+
+    .inner-item {
+        text-align: center;
+
+        img {
+            margin: 0 auto;
+            width: auto;
+            height: 300px;
+            max-height: 300px;
+        }
+    }
+
+    #fullStoryCaption {
+        background-color: transparent;
+        position: relative;
+        max-width: 80%;
+        left: 0px;
+        padding-left: 21%;
+        //padding-right: 10px;
+        z-index: 16;
+
+        p {
+            margin: 0;
+            text-align: left;
+            color: black;
+            line-height: 1.2;
+            font-size: .8em;
+            padding-top: 8px;
+            text-shadow: none;
+        }
+        .photoCaption {
+            margin: 0;
+            text-align: left;
+            color: black;
+            line-height: 1.2;
+            font-size: .8em;
+            padding-top: 8px;
+            text-shadow: none;
+            //left: 10px;
+        }
+
+    }
+}
+
+.picButtons {
+    .myCapButton {
+        text-align: right;
+
+        .mycaptureButton {
+            margin-top: 5px;
+        }
+    }
+    .slideShowViewButton {
+        text-align:center;
+        padding-top:10px;
+    }
+}
+
+
+
+/////////////////////////////////////////////////////////////
+//     carousel controlls
+/////////////////////////////////////////////////////////////
+
+.carousel-indicators {
+    width: 100%;
+    top: 10px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    height: 15%;
+    //background-color: #333333;
+    li {
+        //background-color: #333333;
+    }
+}
+
+#homeCarousel {
+    .carousel-control {
+          position: absolute;
+          top: 100px;
+          height: 50px;
+          width: 50px;
+          margin-top: -25px;
+          margin-top: 0;
+          font-size: 60px;
+          font-weight: 100;
+          line-height: 25px;
+          text-shadow: 0 1px 1px rgba(0,0,0,.4);
+          background-color: transparent;
+          border: 0;
+          z-index: 10;
+          text-align: center;
+          background: #222222;
+          border: 3px solid #ffffff;
+          -webkit-border-radius: 30px;
+         -moz-border-radius: 30px;
+          border-radius: 30px;
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          margin-left: 5px;
+          margin-right: 5px;
+    }
+}
+#sectionPageCarousel {
+    .carousel-control {
+          position: absolute;
+          top: 100px;
+          height: 50px;
+          width: 50px;
+          margin-top: -25px;
+          margin-top: 0;
+          font-size: 60px;
+          font-weight: 100;
+          line-height: 25px;
+          text-shadow: 0 1px 1px rgba(0,0,0,.4);
+          background-color: transparent;
+          border: 0;
+          z-index: 10;
+          text-align: center;
+          background: #222222;
+          border: 3px solid #ffffff;
+          -webkit-border-radius: 30px;
+         -moz-border-radius: 30px;
+          border-radius: 30px;
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          margin-left: 5px;
+          margin-right: 5px;
+    }
+}
+
+
+
+
+/////////////////////////////////////////////////////////////
+//     media query css - responsive design
+/////////////////////////////////////////////////////////////
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .carouselProd {
+
+        .carousel#homeCarousel {
+            height: 460px;
+
+            .item {
+                height: 460px;
+            }
+
+            .carousel-caption-photo {
+                //height: $frontCaptionHeight; 90
+                top: 380px;
+
+                h1 {
+                    line-height: .9em;
+                    font-size: 1.6em;
+                    //padding: 0px;
+                    //margin: 0;
+
+                }
+            }
+
+            .carousel-caption-noPhoto2 {
+                height: 460px;
+
+                .carousel-black {
+                    height: 460px;
+
+                    /*p.lead {
+                        line-height: $pLineHeight;
+                        font-size: $pFontSize;
+                        padding-left: $pPaddingLeft;
+                        padding-right: $pPaddingRight;
+                        padding-top: $pPaddingTop;
+                        color: #fff;
+                        text-shadow: 0 1px 1px rgba(0,0,0,.4);
+                    }
+
+                    h1 {
+                        line-height: $h1LineHeight;
+                        font-size: $h1FontSize;
+                        padding-left: $h1PaddingLeft;
+                        padding-top: $h1PaddingTop;
+                        padding-right: $h1PaddingRight;
+                        color: #fff;
+                        text-shadow: 0 1px 1px rgba(0,0,0,.4);
+                    }
+
+                    p {
+                        color: #DDDDDD;
+                        text-align: left;
+                        padding-left: $pPaddingLeft + 20px;
+                        font-size: $frontSubFontSize * 1.2;
+                    }
+
+                    .mug-image {
+                        text-align: right;
+                        img {
+                            background-color: #333333;
+                            padding-left: 75px;
+                            padding-top: 50px;
+                            
+                            width: 200px !important;
+                        }
+                    }
+
+                    .mug-lead {
+                        font-size: 1.3em;
+                        padding-left: 8px !important;
+                        padding-right: 30px;
+                        padding-top: 50px;
+                    }*/
+                }     
+
+            }
+        }
+    }
+}
+
+@media (min-width: 461px) and (max-width: 767px) {
+      
+    .carousel#homeCarousel {
+        height: $carouselHeight * $ratioSize461_767;
+        .item {
+            height: $carouselHeight * $ratioSize461_767;
+        }
+        .carousel-caption-photo {
+            height: $frontCaptionHeight * $ratioSize461_767;
+            top: ($carouselHeight * $ratioSize461_767) - ($frontCaptionHeight * $ratioSize461_767);
+            padding-left: $captionPadding * $ratioSize461_767;
+            padding-right: $captionPadding * $ratioSize461_767;
+            padding-top: $captionPadding * $ratioSize461_767 *.4;
+
+            p.lead {
+                //line-height: $pLineHeight * $ratioSize461_767;
+                font-size: $pFontSize * $ratioSize461_767;
+                padding-left: $pPaddingLeft * $ratioSize461_767;
+                padding-right: $pPaddingRight * $ratioSize461_767;
+                padding-top: $pPaddingTop * $ratioSize461_767 * .4;
+            }
+
+            h1 {
+                //line-height: $h1LineHeight * $ratioSize461_767;
+                font-size: $h1FontSize * $ratioSize461_767 * .6;
+                padding-left: 0px; //$h1PaddingLeft * $ratioSize461_767;
+                padding-top: 10px; //$h1PaddingTop * $ratioSize461_767;
+            }
+        }
+
+        .carousel-caption-noPhoto2 {
+            padding: $captionNoPhotoPadding * $ratioSize461_767;
+            height: $carouselHeight * $ratioSize461_767;
+
+            .carousel-black {
+                height: $carouselHeight * $ratioSize461_767;
+                
+                p.lead {
+                    font-size: $pFontSize * $ratioSize461_767;
+                    padding-left: $pPaddingLeft * $ratioSize461_767;
+                    padding-right: $pPaddingRight * $ratioSize461_767;
+                    padding-top: $pPaddingTop * $ratioSize461_767;
+                }
+
+                h1 {
+                    font-size: $h1FontSize * $ratioSize461_767;
+                    padding-left: $h1PaddingLeft * $ratioSize461_767;
+                    padding-top: $h1PaddingTop * $ratioSize461_767;
+                    padding-right: $h1PaddingRight * $ratioSize461_767;
+                }
+                .mug-lead {
+                    font-size: $pFontSize * $ratioSize461_767;
+                    padding-left: $pFontSize * $ratioSize461_767;
+                    padding-right: $pPaddingRight * $ratioSize461_767;
+                    padding-top: 30px;
+                }
+                .mug-image {
+                    img {
+                        padding-left: 55px;
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .carousel-control {
+        top: 100px * $ratioSize461_767;
+        height: 50px * $ratioSize461_767;
+        width: 50px * $ratioSize461_767;
+        margin-top: -25px * $ratioSize461_767;
+        font-size: 60px * $ratioSize461_767;
+        line-height: 25px * $ratioSize461_767;
+        border: 3px * $ratioSize461_767;
+        -webkit-border-radius: 30px * $ratioSize461_767;
+        -moz-border-radius: 30px * $ratioSize461_767;
+        border-radius: 30px * $ratioSize461_767;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 460px) {
+    
+    .carousel#homeCarousel {
+        height: $carouselHeight * $ratioSize200_460;
+
+        .item {
+            height: $carouselHeight * $ratioSize200_460;
+        }
+
+        .carousel-caption-photo {
+            height: $frontCaptionHeight * $ratioSize200_460;
+            top: ($carouselHeight * $ratioSize200_460) - ($frontCaptionHeight * $ratioSize200_460);
+            padding-left: $captionPadding * $ratioSize200_460;
+            padding-right: $captionPadding * $ratioSize200_460;
+            padding-top: $captionPadding * $ratioSize200_460 *.4;
+
+            p.lead {
+                //line-height: $pLineHeight * $ratioSize200_460;
+                font-size: $pFontSize * $ratioSize200_460;
+                padding-left: $pPaddingLeft * $ratioSize200_460;
+                padding-right: $pPaddingRight * $ratioSize200_460;
+                padding-top: $pPaddingTop * $ratioSize200_460;
+            }
+
+            h1 {
+                //line-height: $h1LineHeight * $ratioSize200_460;
+                font-size: $h1FontSize * $ratioSize200_460 * .6;
+                padding-left: 0px; //$h1PaddingLeft * $ratioSize200_460;
+                padding-top: 0px; //$h1PaddingTop * $ratioSize200_460 * .2;
+            }
+        }
+
+        .carousel-caption-noPhoto2 {
+            padding: $captionNoPhotoPadding * $ratioSize200_460;
+            height: $carouselHeight * $ratioSize200_460;
+
+            .carousel-black {
+                height: $carouselHeight * $ratioSize461_767;
+            
+                p.lead {
+                    font-size: $pFontSize * $ratioSize200_460;
+                    padding-left: $pPaddingLeft * $ratioSize200_460;
+                    padding-right: $pPaddingRight * $ratioSize200_460;
+                    padding-top: $pPaddingTop * $ratioSize200_460;
+                }
+
+                h1 {
+                    font-size: $h1FontSize * $ratioSize200_460;
+                    padding-left: $h1PaddingLeft * $ratioSize200_460;
+                    padding-top: $h1PaddingTop * $ratioSize200_460 * .5;
+                    padding-right: $h1PaddingRight * $ratioSize200_460;
+                }
+                .mug-lead {
+                    font-size: $pFontSize * $ratioSize200_460;
+                    padding-left: $pFontSize * $ratioSize200_460;
+                    padding-right: $pPaddingRight * $ratioSize200_460;
+                    padding-top: 10; //$pPaddingTop * $ratioSize200_460;
+                }
+                .mug-image {
+                    img {
+                        padding-left: 55px;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+      .carousel-control {
+          top: 100px * $ratioSize200_460;
+          height: 50px * $ratioSize200_460;
+          width: 50px * $ratioSize200_460;
+          margin-top: -25px * $ratioSize200_460;
+          font-size: 60px * $ratioSize200_460;
+          line-height: 25px * $ratioSize200_460;
+          border: 3px * $ratioSize200_460;
+          -webkit-border-radius: 30px * $ratioSize200_460;
+         -moz-border-radius: 30px * $ratioSize200_460;
+          border-radius: 30px * $ratioSize200_460;
+    }
+
+    #sectionPageCarousel {
+
+        .inner-item {
+
+            img {
+                width: auto;
+                height: 150px;
+                max-height: 150px;
+            }
+        }
+    }
+    #fullStoryCaption {
+        padding-bottom: 0px;
+    }
+
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+
+    #sectionPageCarousel {
+        #fullStoryCaption {
+            .photoCaption {
+                width: 160%;
+                margin-left: -30%;
+            }
+        }
+    }
+
+}
+
+.mug-image {
+    text-align: right;
+}
+.carouselIcons {
+    font-size: .8em;
+}
+.listStoryIcons {
+    font-size: .5em;
+}
+

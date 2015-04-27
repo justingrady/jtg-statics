@@ -1,0 +1,80 @@
+mixin search
+  .input-group
+      input.form-control(type='text')
+      span.input-group-btn
+        button.btn.btn-primary(type='button') Search
+
+mixin classifieds-widget
+    .classFeat.clearfix.text-center
+        h4.title.text-left
+            a(title='view all classified ads', href='/apps/pbcs.dll/section?Category=CLASSIFIEDSAJAX') Bulletin Classifieds
+        ul.clearfix
+            li
+                a(title='view Employment / Jobs classified ads', href='/apps/pbcs.dll/section?Category=CLASSIFIEDSAJAX#link;0')
+                    img(src='http://statics.bendbulletin.com/images/classifieds/btn_small_jobs.jpg')
+                    p Jobs
+            li
+                a(title='view Cars / Autos classified ads', href='/apps/pbcs.dll/section?Category=CLASSIFIEDSAJAX#link;1')
+                    img(src='http://statics.bendbulletin.com/images/classifieds/btn_small_autos.jpg')
+                    p Autos
+            li
+                a(title='view Real Estate / Houses for sale classified ads', href='/apps/pbcs.dll/section?Category=CLASSIFIEDSAJAX#link;2')
+                    img(src='http://statics.bendbulletin.com/images/classifieds/btn_small_realestate.jpg')
+                    p Real Estate
+            li
+                a(title='view Rentals classified ads', href='/apps/pbcs.dll/section?Category=CLASSIFIEDSAJAX#link;3')
+                    img(src='http://statics.bendbulletin.com/images/classifieds/btn_small_rentals.jpg')
+                    p Rentals
+            li
+                a(title='view Public Notices classified ads', href='/apps/pbcs.dll/section?Category=CLASSIFIEDSAJAX#link;10')
+                    img(src='http://statics.bendbulletin.com/images/classifieds//btn_small_notices.jpg')
+                    p Public notices
+        a.btn.btn-primary(title='view all classified ads', href='#') view all classifieds
+        a.btn.btn-success(title='Place a classified ad', href='#') place a classified ad
+
+mixin navs(navs)
+  ul.nav.navbar-nav
+    - each nav in navs
+      li= nav
+
+mixin list(items, classes)
+  ul(class=classes)
+    - each item in items
+      li 
+        a(href="#")
+            = item
+
+mixin breadcrumb(items, classes)
+    - var total = items.length - 1
+    ul.breadcrumb(class=classes)
+        - each item,i in items
+            if i == total
+                li.active
+                    = item
+            else
+                li
+                    a(href="#")= item
+
+mixin example-carousel
+    #carousel-example-generic.carousel.slide
+        <!-- Indicators -->
+        ol.carousel-indicators
+            li.active(data-target="#carousel-example-generic",data-slide-to="0")
+            li(data-target="#carousel-example-generic",data-slide-to="1")
+            li(data-target="#carousel-example-generic",data-slide-to="2")
+        <!-- Wrapper for slides -->
+        div.carousel-inner
+            div.item.active
+                img(src="http://placehold.it/800x400&text=First Slide",alt="First Slide")
+                .carousel-caption First Slide
+            div.item
+                img(src="http://placehold.it/800x400&text=Second Slide",alt="Second Slide")
+                .carousel-caption Second Slide
+            div.item
+                img(src="http://placehold.it/800x400&text=Third Slide",alt="Third Slide")
+                .carousel-caption Third Slide
+        <!-- Controls -->
+        a.left.carousel-control(href="#carousel-example-generic", data-slide="prev")
+            span.icon-prev
+        a.right.carousel-control(href="#carousel-example-generic", data-slide="next")
+            span.icon-next

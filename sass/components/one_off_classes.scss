@@ -1,0 +1,47 @@
+
+.nattyHeader {
+	background-image:url("http://statics.bendbulletin.com/images/nattyBanner.jpg");
+	background-repeat:no-repeat;
+	background-size:contain;
+	color:#5cad5c;
+}
+
+.nattyHeaderLose {
+	background-image:url("http://statics.bendbulletin.com/images/nattyLose.jpg");
+	background-repeat:no-repeat;
+	background-size:contain;
+	color:#dfdfdf;
+}
+
+@media (min-width: 1195px) and (max-width: 100000px) {
+	.nattyHeader {
+		height:165px;
+	}
+	.nattyHeaderLose {
+		height:280px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1194px) {
+	.nattyHeader {
+		height:145px;
+	}
+	.nattyHeaderLose {
+		height:230px;
+	}
+}
+@media (min-width: 580px) and (max-width: 991px) {
+	.nattyHeader {
+		height:165px;
+	}
+	.nattyHeaderLose {
+		height:280px;
+	}
+}
+@media (min-width: 1px) and (max-width: 579px) {
+	.nattyHeader {
+		height:105px;
+	}
+	.nattyHeaderLose {
+		height:240px;
+	}
+}

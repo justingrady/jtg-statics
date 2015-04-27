@@ -1,0 +1,298 @@
+////////////////////  replicaEdition.csp ////////////////////////////////////////////
+
+.rtrail-replica-box {
+	background-color: #4A4A4A;
+	margin: 1em 0;
+	border: #333333;	
+
+	a {
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+	.rtrail-replica-img {
+		padding: 8px;
+		padding-right: 0px;
+
+		img {
+			padding: 8px;
+			padding-right: 0px;
+			//width: 90%;
+			border-radius: 15px;
+		}
+	}
+
+	.rtrail-replica-text {
+		margin-left: 0px;
+		padding-left: 0px;
+		text-align: left;
+
+		p {
+			color: white;
+			font-size: 1.2em;
+			padding-top: 15px;
+		}
+
+		a {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.rtrail-replica-img {
+
+		img {
+			width: 90%;
+		}
+	}
+}
+
+@media (min-width: 50px) and (max-width: 395px){
+	.rtrail-replica-img {
+
+		img {
+			width: 90%;
+		}
+	}
+}
+
+//////////// mosts box - popular, shared, commented ////////////////////////////////////////////////
+
+.popular-section-title {
+	text-align: left;
+	font-size: 1em;
+}
+
+#addthis_sharedcontent {
+	text-align: left;
+	padding-top: 5px;
+	text-decoration: none;
+	font-size: .9em;
+}
+	
+a.addthis-content-link {
+	text-decoration: none;
+}
+
+////////////  specialPubs.csp   ////////////////////////////////////////////////////////////////////
+
+@mixin pubswidget($bkcolor,$txcolor) {
+	margin: 1em 0;
+	background-color: $bkcolor;
+	border: 1px solid #cccccc;
+	padding: 0 1em 1em 1em;
+
+	h4 {
+		margin: 0 0 0.5em 0;
+	}
+
+	.rtrail-spPubs-lower-text {
+		padding-left: 0px;
+	}
+}
+
+.rtrail-spPubs {
+	@include pubswidget(#ececec,#000000);
+}
+
+.rtrail-newsProj {
+	@include pubswidget(#ffffff,#000000);
+}
+
+////////////  bachelorBox.csp  - rt rail for weather ///////////////////////////////////////////////
+
+.skiArea > article > h4 {
+    padding-top: 40px;
+}
+
+.snowFall {
+
+  	h3 {
+    	text-size:.6em;
+    	text-align: left;
+  	}
+
+  	p {
+    	text-align: left;
+    	padding: 0px 0px 0px 15px;
+  	}
+    
+}
+
+/////////// socialMedia.css - rt rail top //////////////////////////////////////////////////////////
+
+.rssButton {
+    width: 35px;
+    padding-top: 0px;
+    padding-left: 3px;
+}
+
+soc_med_icon {
+	text-align: left;
+	width: 98%;
+	a {
+		width: 100%;
+	}
+}
+
+.addThisBox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align:left;
+    vertical-align: center;
+}
+
+.rssBox {
+    padding-left: 2px;
+}
+
+#rtRailAddthis {
+	//width: 99%;
+    ul {
+    	text-decoration: none;
+    	li {
+    		display:inline;
+    		text-decoration: none;
+    		width: 35px;
+ 			padding-right: 3px !important;
+    		margin: 0;
+    	}
+    	.fbLike {
+    		width: 54px;
+    		padding-left: 3px;
+    	}
+    }
+
+}
+
+.rtRail-share-text {
+	text-align: right;
+	padding-right: 0px;
+	vertical-align: middle;
+	p {
+		width: 98%;
+		padding:0px;
+		padding-top: 15px;
+	}
+}
+
+@media (min-width: 50px) and (max-width: 460px) {
+	.rtRail-share-text {
+		text-align: center;
+	}
+}
+
+@media (min-width: 461px) and (max-width: 767px) {
+	.rtRail-share-text {
+		text-align: center;
+	}
+}
+
+///////////////  classifieds  //////////////////////////////////////////////////
+
+.class-button {
+	width: 47%;
+	font-size: 1em;
+}
+
+.classifiedTitle {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.classifiedListItem {
+	margin-bottom: 0px !important;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.class-button {
+		font-size: .85em;
+	}
+}
+
+@media (min-width: 50px) and (max-width: 460px) {
+	.class-button {
+		font-size: .7em;
+	}
+}
+
+///////////////  subscribeBox  //////////////////////////////////////////////////
+
+.subscribeBox {
+	margin: 0 auto;
+	padding: 5px 0 5px 15px;
+	text-align: left;
+}
+
+.subscribeText {
+	padding: 15px 0px 0px 5px;
+	text-align: right;
+	line-height: .6em;
+
+	p {
+		padding-right: 0px;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+}
+
+@media (min-width: 50px) and (max-width: 460px) {
+	.subscribeText {
+		text-align: center !important;
+	}
+	.subscribeBox {
+		text-align: center !important;
+		padding-left: 0px;
+	}
+}
+
+@media (min-width: 461px) and (max-width: 767px) {
+	.subscribeText {
+		text-align: center !important;
+	}
+	.subscribeBox {
+		text-align: center !important;
+		padding-left: 0px;
+	}
+}
+
+////////////////  sports AP video feed box
+
+.rtRailAPVideo {
+	width: 100% !important;
+	margin: 0 auto !important;
+}
+
+.haveFun {
+	margin: 1em 0 0 0;
+	
+	h4 {
+		margin: 0 0 0.5em 0;
+	}
+	
+	.haveFunBox {
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+
+			li {
+				text-align: left;
+				font-size: .8em;
+			}
+
+		}
+	}
+}
+
+///////////////  CitySpark Event Calendar right rail module  //////////////////////////////////////////////////
+
+.citysparkmodule {
+	margin: 1em 0;
+	border: 5px solid #cccccc;
+	height: 450px;
+	padding: 0 0 0.25em 0;
+}
+

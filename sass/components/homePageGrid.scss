@@ -1,0 +1,20 @@
+.areaTitle {
+	color: #870e06;
+	background-color: #ececec;
+	border: 1px solid #cccccc;
+	padding: 0.25em 0.5em;
+	margin: 0 0 1em 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed", "Open Sans";
+
+	a {
+		text-decoration: none;
+		color: #870e06;
+		&:hover {
+			text-decoration:none;
+		}
+	}
+}

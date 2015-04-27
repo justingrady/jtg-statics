@@ -1,0 +1,266 @@
+@mixin topbanners {
+  background-color: #333333;
+	$backgroundcolor: #333333;
+
+	.adunit-left {
+		text-align: center;
+		margin: 0 auto;
+		background-color: $backgroundcolor;
+	}
+	
+	.adunit-right {
+		background-color: $backgroundcolor;
+		display: none;
+		float: right;	
+	}	
+	
+	@media (min-width: 320px) and (max-width: 469px) {
+	    /* small device */
+	    .row {
+                padding: 2px 0;
+            }
+            .adunit-left {
+		width: 320px;
+		height: 50px;
+	    }
+	}
+	
+	@media (min-width: 470px) and (max-width: 767px) {
+	    /* small device */
+	    .row {
+                padding: 5px 0;
+            }
+            .adunit-left {
+		width: 468px;
+		height: 60px;
+	    }
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+	    /* small to medium devices */
+	    .row {
+		padding: 10px 0;
+	    }
+	    .adunit-left {
+		width: 728px;
+		/* height: 90px; */
+	    }
+	}
+
+
+	@media (min-width: 992px) {
+	    
+	    .container {
+                width: 976px;
+            }
+
+	    .row {
+                padding: 10px 0;
+            }
+	    .adunit-left {
+		min-width: 728px;
+		/* height: 90px; */
+		float: left;
+	    }
+
+	    .adunit-right {
+		display: block;
+	    }
+	   
+            .adunit {
+		min-width: 970px;
+		/* min-height: 90px; */
+		text-align: center;
+           
+                img {
+		  	display: block;
+		}
+
+		div div {
+			// utter hack job
+			display: inline-table;
+		}
+	    } 
+ 
+	}
+}
+
+@mixin horzbanners {
+  background-color: #333333;
+  text-align: center;
+
+	.row {
+		padding: 15px 0;
+	}
+
+	.adunit {
+		margin: 0 auto;
+	}	
+
+	@media (min-width: 320px) and (max-width: 469px) {
+	    /* small device */
+	    .row {
+                padding: 2px 0;
+            }
+            .adunit {
+		width: 320px;
+		height: 50px;
+	    }
+	}
+	
+	@media (min-width: 470px) and (max-width: 767px) {
+	    /* small device */
+	    .row {
+                padding: 5px 0;
+            }
+            .adunit {
+		width: 468px;
+		height: 60px;
+	    }
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+	    /* small to medium devices */
+	    .row {
+                padding: 10px 0;
+            }
+	    .adunit {
+		width: 728px;
+		height: 90px;
+	    }
+	}
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+	    /* medium to large desktops */
+	    .row {
+            }
+	    .adunit {
+		width: 970px;
+		height: 90px;
+	    }
+	}
+
+	@media (min-width: 1200px) {
+	    /* large desktops */
+	    .row {
+            }
+	    .adunit {
+		width: 970px;
+		height: 90px;
+	    }
+	}
+}
+
+.ads-top {
+    @include horzbanners;
+}
+
+.ads-toptwo {
+    @include topbanners;
+}
+
+.ads-superlead {
+    @include topbanners;
+}
+
+.ads-bottom {
+    @include horzbanners;
+}
+
+@mixin railbanners {
+  background-color: #ececec;
+  padding: 10px 0;	
+
+	.adunit {
+		margin: auto;
+		background-color: #ececec;
+		min-height: 100px;
+		width: 300px;
+	}
+ 
+	@media (min-width: 320px) and (max-width: 469px) {
+	    /* small device */
+	    .row {
+                padding: 2px 0;
+            }
+            .adunit {
+		width: 180px;
+		height: 150px;
+	    }
+	}
+	
+	@media (min-width: 470px) and (max-width: 767px) {
+	    /* small device */
+	    .row {
+                padding: 5px 0;
+            }
+            .adunit {
+	    }
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+	    /* small to medium devices */
+	    .row {
+                padding: 10px 0;
+            }
+	    .adunit {
+	    }
+	}
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+	    /* medium to large desktops */
+	    .row {
+                padding: 10px 0;
+            }
+	    .adunit {
+	    }
+	}
+
+	@media (min-width: 1200px) {
+	    /* large desktops */
+	    .row {
+                padding: 10px 0;
+            }
+	    .adunit {
+	    }
+	}
+}
+
+.ads-rail {
+    @include railbanners;
+}
+
+/* Enjoy and - don't smoke too much weed */
+
+@mixin inlinebanners {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 20px 0;
+  text-align: center;	
+
+	.adunit {
+		margin: auto;
+	}
+ 
+	@media (min-width: 320px) and (max-width: 469px) {
+	    /* small device */
+  	    background-color: #ececec;
+	    .adunit {
+		width: 320px;
+		height: 50px;
+	    }
+	}
+	
+	@media (min-width: 470px) {
+	    /* small device */
+            .adunit {
+		min-width: 300px;
+		max-width: 468px;
+		min-height: 60px;
+		max-height: 250px;
+	    }
+	}
+}
+
+.ads-inline {
+    @include inlinebanners;
+}

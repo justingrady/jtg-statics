@@ -1,0 +1,148 @@
+.signIn {
+    padding-top: 10px;
+}
+
+.navbarRow {
+    padding: 0px !important;
+}
+
+@mixin masthead {
+
+    .masthead {
+        padding: 2px 0 !important;
+    }
+
+    .logo {
+        text-align: center;
+        margin-top: 4px;
+
+        .logoText {
+            margin-bottom: 0px;
+            font-style: italic;
+            line-height: 1em;
+        }
+        time {
+            font-size: .8em;
+        }
+        a {
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+    .search {
+        text-align: right;
+        padding: 25px 0 0 0;
+    }
+
+    .weather-top {
+        @extend .media;
+        img {
+            @extend .img-responsive;
+        }
+    }
+
+    .headerAcctNav {
+	    /* Wed Sep 24 11:38:41 PDT 2014 JTG */
+	    p {
+		    margin: 0 auto 10px auto;
+		    width: 140px;
+	    }
+    }
+
+	@media (max-width: 767px) {
+	    /* small device */
+	    .row {
+                padding: 5px 10px;
+            }
+
+            .logo {
+                
+                p {
+                    display: none;
+                }
+
+                img {
+                    height: auto;
+                    max-width: 50%;
+                    margin: 0 0 5px 0;
+                }
+            }
+            .search {
+                padding: 0;
+            }
+        }   
+
+	@media (min-width: 768px) and (max-width: 991px) {
+	    /* small to medium devices */
+	    .row {
+                padding: 10px 0;
+            }
+            .logo {
+                
+                p {
+                    color: #666666;
+                }
+
+                img {
+                    height: auto;
+                    max-width: 80%;
+                }
+            }
+            .search {
+                padding: 0;
+            }
+	}
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+	    /* medium to large desktops */
+	    .row {
+                padding: 10px 0;
+            }
+	    .weather-top {
+	    }
+            .logo {
+                
+                p {
+                    color: #666666;
+                }
+
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+            .search {
+                text-align: right;
+                padding: 25px 0 0 0;
+            }
+        .masthead-body {
+            
+        }
+	}
+
+	@media (min-width: 1200px) {
+	    /* large desktops */
+	    .row {
+                padding: 10px 0;
+            }
+	    .weather-top {
+	    }
+            .logo {
+                
+                p {
+                    color: #666666;
+                }
+
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+            .search {
+                text-align: right;
+                padding: 25px 0 0 0;
+            }
+	}
+}

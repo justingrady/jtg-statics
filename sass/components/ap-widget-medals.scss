@@ -1,0 +1,486 @@
+$assetSprite: 'http://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_medals';
+
+.ap_widget-Medal_Count_Widget {
+	margin: 0 0 1.5em 0;
+}
+
+p_widget div.item-list ul li {
+	margin: 0;
+}
+
+.ap_widget div.medals-view-more {
+	/* width: 300; */
+	/* margin-top: -16px; */
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 32px;
+	text-align: center;
+	/* padding-top: 10px; */
+	margin: 5px 0 10px 0;
+	/* background: url('#{$assetSprite}/images/bg-home-medals-normal.png') repeat-y scroll 174px 50px transparent; */
+}
+
+.ap_widget div.medals-view-more a {
+	border: 0 none;
+	outline: 0 none;
+	display: block;
+	background: #0e8fcc;
+	color: #ffffff;
+	text-align: center;
+	/* font-family: 'Raleway', serif; */
+	font-weight: 700;
+	font-size: 12px;
+	padding: 0 0;
+	text-decoration: none;
+}
+
+.ap_widget div.medals-view-more a:hover {
+	background: #146994;
+	color: #ffffff;
+}
+
+.ap_widget p.medal-updated-date {
+	margin: 2px;
+	font-size: 10px;
+	font-style: italic;
+}
+
+.ap_widget table.medals-table {
+	border-collapse: collapse;
+	border: none;
+	margin-bottom: 5px;
+}
+
+.ap_widget table.medals-table tbody {
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.ap_widget table.medals-table tbody tr {
+	border-color: #cdcdcd;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.ap_widget table.medals-table th {
+	background: none;
+	border: none;
+	padding: 5px 1.5%;
+	color: #333333;
+	/* font-family: 'Open Sans',serif; */
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: normal;
+}
+
+.ap_widget table.medals-table th.bronze {
+	background: rgb(244,228,212);
+ /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(244,228,212,1) 0%, rgba(233,217,200,1) 100%);
+ /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,228,212,1)), color-stop(100%,rgba(233,217,200,1)));
+ /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(244,228,212,1) 0%,rgba(233,217,200,1) 100%);
+ /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(244,228,212,1) 0%,rgba(233,217,200,1) 100%);
+ /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(244,228,212,1) 0%,rgba(233,217,200,1) 100%);
+ /* IE10+ */
+	background: linear-gradient(top, rgba(244,228,212,1) 0%,rgba(233,217,200,1) 100%);
+ /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e4d4', endColorstr='#e9d9c8',GradientType=0 );
+ /* IE6-9 */
+	color: #1b1b1b;
+}
+
+.ap_widget table.medals-table th.countryname {
+	background: url('#{$assetSprite}/images/countries_flags_sprite_small.png') no-repeat;
+	padding-left: 40px;
+	width: 49%;
+	text-align: left;
+}
+
+.ap_widget table.medals-table th.countryname a {
+	color: #333333;
+	text-decoration: none;
+}
+
+.ap_widget table.medals-table th.countryname a:hover {
+	color: #666666;
+}
+
+.ap_widget table.medals-table th.countryname.afghanistan {
+	background-position: 6px -1500px;
+}
+
+.ap_widget table.medals-table th.countryname.albania {
+	background-position: 6px -1536px;
+}
+
+.ap_widget table.medals-table th.countryname.algeria {
+	background-position: 6px -1573px;
+}
+
+.ap_widget table.medals-table th.countryname.american-samoa {
+	background-position: 6px -1609px;
+}
+
+.ap_widget table.medals-table th.countryname.andorra {
+	background-position: 6px -1646px;
+}
+
+.ap_widget table.medals-table th.countryname.angola {
+	background-position: 6px -1683px;
+}
+
+.ap_widget table.medals-table th.countryname.antigua-and-barbuda {
+	background-position: 6px -1720px;
+	line-height: 1.00em;
+}
+
+.ap_widget table.medals-table th.countryname.argentina {
+	background-position: 6px -1757px;
+}
+
+.ap_widget table.medals-table th.countryname.armenia {
+	background-position: 6px -1794px;
+}
+
+.ap_widget table.medals-table th.countryname.aruba {
+	background-position: 6px -1831px;
+}
+
+.ap_widget table.medals-table th.countryname.australia {
+	background-position: 6px 7px;
+}
+
+.ap_widget table.medals-table th.countryname.austria {
+	background-position: 6px -30px;
+}
+
+.ap_widget table.medals-table th.countryname.azerbaijan {
+	background-position: 6px -67px;
+}
+
+.ap_widget table.medals-table th.countryname.belarus {
+	background-position: 6px -104px;
+}
+
+.ap_widget table.medals-table th.countryname.belgium {
+	background-position: 6px -140px;
+}
+
+.ap_widget table.medals-table th.countryname.bulgaria {
+	background-position: 6px -177px;
+}
+
+.ap_widget table.medals-table th.countryname.canada {
+	background-position: 6px -214px;
+}
+
+.ap_widget table.medals-table th.countryname.china {
+	background-position: 6px -250px;
+}
+
+.ap_widget table.medals-table th.countryname.croatia {
+	background-position: 6px -1353px;
+}
+
+.ap_widget table.medals-table th.countryname.czech-republic {
+	background-position: 6px -287px;
+}
+
+.ap_widget table.medals-table th.countryname.denmark {
+	background-position: 6px -324px;
+}
+
+.ap_widget table.medals-table th.countryname.estonia {
+	background-position: 6px -361px;
+}
+
+.ap_widget table.medals-table th.countryname.finland {
+	background-position: 6px -398px;
+}
+
+.ap_widget table.medals-table th.countryname.france {
+	background-position: 6px -434px;
+}
+
+.ap_widget table.medals-table th.countryname.germany {
+	background-position: 6px -471px;
+}
+
+.ap_widget table.medals-table th.countryname.india {
+	background-position: 6px -1391px;
+}
+
+.ap_widget table.medals-table th.countryname.italy {
+	background-position: 6px -544px;
+}
+
+.ap_widget table.medals-table th.countryname.japan {
+	background-position: 6px -581px;
+}
+
+.ap_widget table.medals-table th.countryname.kazakhstan {
+	background-position: 6px -618px;
+}
+
+.ap_widget table.medals-table th.countryname.latvia {
+	background-position: 6px -691px;
+}
+
+.ap_widget table.medals-table th.countryname.lebanon {
+	background-position: 6px -1429px;
+}
+
+.ap_widget table.medals-table th.countryname.lithuania {
+	background-position: 6px -655px;
+}
+
+.ap_widget table.medals-table th.countryname.netherlands {
+	background-position: 6px -729px;
+}
+
+.ap_widget table.medals-table th.countryname.new-zealand {
+	background-position: 6px -765px;
+}
+
+.ap_widget table.medals-table th.countryname.norway {
+	background-position: 6px -802px;
+}
+
+.ap_widget table.medals-table th.countryname.pakistan {
+	background-position: 6px -839px;
+}
+
+.ap_widget table.medals-table th.countryname.peru {
+	background-position: 6px -1467px;
+}
+
+.ap_widget table.medals-table th.countryname.poland {
+	background-position: 6px -874px;
+}
+
+.ap_widget table.medals-table th.countryname.romania {
+	background-position: 6px -912px;
+}
+
+.ap_widget table.medals-table th.countryname.russia {
+	background-position: 6px -949px;
+}
+
+.ap_widget table.medals-table th.countryname.serbia {
+	background-position: 6px -986px;
+}
+
+.ap_widget table.medals-table th.countryname.slovakia {
+	background-position: 6px -1021px;
+}
+
+.ap_widget table.medals-table th.countryname.slovenia {
+	background-position: 6px -1058px;
+}
+
+.ap_widget table.medals-table th.countryname.south-korea {
+	background-position: 6px -1095px;
+}
+
+.ap_widget table.medals-table th.countryname.spain {
+	background-position: 6px -1132px;
+}
+
+.ap_widget table.medals-table th.countryname.sweden {
+	background-position: 6px -1169px;
+}
+
+.ap_widget table.medals-table th.countryname.switzerland {
+	background-position: 6px -1206px;
+}
+
+.ap_widget table.medals-table th.countryname.ukraine {
+	background-position: 6px -1243px;
+}
+
+.ap_widget table.medals-table th.countryname.united-kingdom {
+	background-position: 6px -508px;
+}
+
+.ap_widget table.medals-table th.countryname.united-states {
+	background-position: 6px -1280px;
+}
+
+.ap_widget table.medals-table th.countryname.uzbekistan {
+	background-position: 6px -1317px;
+}
+
+.ap_widget table.medals-table th.gold {
+	background: rgb(254,242,206);
+ /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(254,242,206,1) 0%, rgba(243,231,195,1) 100%);
+ /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,242,206,1)), color-stop(100%,rgba(243,231,195,1)));
+ /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(254,242,206,1) 0%,rgba(243,231,195,1) 100%);
+ /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(254,242,206,1) 0%,rgba(243,231,195,1) 100%);
+ /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(254,242,206,1) 0%,rgba(243,231,195,1) 100%);
+ /* IE10+ */
+	background: linear-gradient(top, rgba(254,242,206,1) 0%,rgba(243,231,195,1) 100%);
+ /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef2ce', endColorstr='#f3e7c3',GradientType=0 );
+ /* IE6-9 */
+	color: #1b1b1b;
+}
+
+.ap_widget table.medals-table th.medals {
+	font-size: 12px;
+	width: 10%;
+	line-height: 32px;
+	font-weight: bold;
+}
+
+.ap_widget table.medals-table th.rank {
+	background: url('#{$assetSprite}/images/bg-table-home-divider.png') no-repeat scroll right 7px transparent;
+	width: 9%;
+	padding: 0;
+}
+
+.ap_widget table.medals-table th.rank span {
+	font-size: 14px;
+	display: block;
+	line-height: 38px;
+	border-right: 1px #d6d6d6 solid;
+	text-align: center;
+	color: #333;
+}
+
+.ap_widget table.medals-table th.silver {
+	background: rgb(238,238,238);
+ /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(227,227,227,1) 100%);
+ /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(227,227,227,1)));
+ /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(227,227,227,1) 100%);
+ /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(227,227,227,1) 100%);
+ /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(227,227,227,1) 100%);
+ /* IE10+ */
+	background: linear-gradient(top, rgba(238,238,238,1) 0%,rgba(227,227,227,1) 100%);
+ /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e3e3e3',GradientType=0 );
+ /* IE6-9 */
+	color: #1b1b1b;
+}
+
+.ap_widget table.medals-table th.total {
+	font-size: 12px;
+	width: 12%;
+	line-height: 32px;
+	font-weight: bold;
+}
+
+.ap_widget table.medals-table-header {
+	border: none;
+}
+
+.ap_widget table.medals-table-header tbody tr th.bronze {
+	background: #da9346;
+	color: #73471c;
+	width: 10%;
+}
+
+.ap_widget table.medals-table-header tbody tr th.countryname {
+	color: #ffffff;
+	text-align: left;
+	font-size: 11px;
+	width: 49%;
+}
+
+.ap_widget table.medals-table-header tbody tr th.gold {
+	background: #ffcd33;
+	color: #956f00;
+	width: 10%;
+}
+
+.ap_widget table.medals-table-header tbody tr th.rank {
+	font-size: 11px;
+	width: 9%;
+}
+
+.ap_widget table.medals-table-header tbody tr th.silver {
+	background: #bebebe;
+	color: #666;
+	width: 10%;
+}
+
+.ap_widget table.medals-table-header tbody tr th.total {
+	color: #ffffff;
+	font-size: 11px;
+	padding: 3px;
+	text-align: center;
+	width: 12%;
+}
+
+.ap_widget table.medals-table-header th {
+	border: none;
+	background: #5c5c5c;
+	/* font-family: 'Raleway',serif; */
+	font-size: 11px;
+	line-height: 18px;
+	text-transform: none;
+	font-weight: 700;
+	padding: 0;
+}
+
+.ap_widget table.medals-table-header th span {
+	border-right: 1px solid #7D7D7D;
+	color: #FFFFFF;
+	display: block;
+	line-height: 22px;
+	text-align: center;
+	margin: 2px 0;
+}
+
+.ap_widget table.medals-table-header th.countryname {
+	padding-left: 2%;
+}
+
+.ap_widget table.medals-table-header th.medal {
+	background: none;
+	color: #9d7500;
+	font-weight: 900;
+	font-size: 16px;
+	/* font-family: 'Open Sans', serif; */
+	text-align: center;
+}
+
+.ap_widget table.medals-table-header th.total {
+	padding-left: 1.8%;
+}
+
+.ap_widget ul.medals-list {
+	list-style: none;
+	padding: 0;
+	width: 300;
+	margin-left: auto;
+	margin-right: auto;
+	/* background: url('#{$assetSprite}/images/bg-home-medals-normal.png') repeat-y scroll 174px 50px transparent; */
+}
+
+.ap_widget ul.medals-list li.first table.medals-table-header {
+	border: none;
+	padding-bottom: 3%;
+	padding-bottom: 2%;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+/* when country icon not found ... hide the default flag */
+.ap_widget table.medals-table th.countryname {
+	background-position: -50px 0;
+}

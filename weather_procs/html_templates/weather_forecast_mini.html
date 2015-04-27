@@ -1,0 +1,36 @@
+<!--weather_forecast_mini.html
+<div style="margin-bottom: 10px;" class="hed">
+        <div style="float: left; margin-right: 10px; margin-bottom: 10px;"><TMPL_IF NAME="ICON">
+                <img src="http://statics.bendbulletin.com/weather/graphics/masthead/<TMPL_VAR NAME="ICON">.png"/></TMPL_IF>
+        </div>
+        <h2><TMPL_VAR NAME="DAY"></h2>
+        <div style="clear: left;"> </div>
+</div>
+<span class="bold">High:</span> <TMPL_VAR NAME="HITEMP">&deg; F<br/>
+<span class="bold">Low:</span> <TMPL_VAR NAME="LOTEMP">&deg; F<br/>
+<span class="bold">Chance of precipitation:</span> <TMPL_VAR NAME="POP">%<br/>
+<span class="bold">Sunrise:</span> <TMPL_VAR NAME="SUNRISE"><br/>
+<span class="bold">Sunset:</span> <TMPL_VAR NAME="SUNSET"><br/>
+-->
+<!-- weather time:<TMPL_VAR NAME="TIMESTAMP"> -->
+
+<div class="weatherGrid col-md-2">
+	<div class="mast">
+		<div>	
+			<h4><TMPL_VAR NAME="HED"></h4>
+		</div>
+		<div>
+			<TMPL_IF NAME="ICON"><img src="http://statics.bendbulletin.com/weather/graphics/masthead/<TMPL_VAR NAME="ICON">.png"/></TMPL_IF>
+		</div>
+	</div>
+	<div class="textDesc">
+		<p><TMPL_VAR NAME="DAY"> - <TMPL_VAR NAME="DESC"></p>
+		<TMPL_IF NAME="HITEMP"><span class="bold">High:</span> <TMPL_VAR NAME="HITEMP">&deg; F<br/></TMPL_IF>
+		<TMPL_IF NAME="LOTEMP"><span class="bold">Low:</span> <TMPL_VAR NAME="LOTEMP">&deg; F<br/></TMPL_IF>
+		<TMPL_IF NAME="POP"><span class="bold">Chance of precipitation:</span> <TMPL_VAR NAME="POP">%<br/></TMPL_IF>
+		<TMPL_IF NAME="WSPEED"><span class="bold">Wind Speed:</span> <TMPL_VAR NAME="WSPEED"> MPH<br/></TMPL_IF>
+		<TMPL_IF NAME="WDIR"><span class="bold">Wind Direction:</span> <TMPL_VAR NAME="WDIR"><br/></TMPL_IF>
+		<TMPL_IF NAME="SUNRISE"><span class="bold">Sunrise:</span> <TMPL_VAR NAME="SUNRISE"><br/></TMPL_IF>
+		<TMPL_IF NAME="SUNSET"><span class="bold">Sunset:</span> <TMPL_VAR NAME="SUNSET"><br/></TMPL_IF>
+	</div>
+</div>

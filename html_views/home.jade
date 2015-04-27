@@ -1,0 +1,85 @@
+extends templates/main
+
+block vars
+    - var pageTitle="Home Page"
+  
+block head
+
+block header
+
+block content
+    .row
+        .col-md-5
+            section
+                article.media
+                    img(src="http://placehold.it/455x325&text=lead article photo")
+                    .media-body
+                        h4.media-heading Great headline goes here
+                        p.pubDate August 21, 2013 13:52
+                        p.content There's some really badass content here
+            // +example-carousel
+        .col-md-3
+            section
+                h3 Latest News
+                article.media
+                    a.pull-left 
+                        img(src="http://placehold.it/100")
+                    .media-body
+                        h4.media-heading 11 files blossom overnight
+                        p.pubDate August, 8 2013 11:56 am
+                        p.content Nam non est nunc. Mauris arcu purus, bibendum lacinia sapien et, aliquam ullamcorper est. Quisque sit amet molestie quam, sit amet consectetur elit. Proin in mi et dolor scelerisque bibendum.
+
+        .col-md-4.ad.text-center 
+            +classifieds-widget
+            img(src="http://placehold.it/300x250&text=Ad")
+    .row 
+        .col-md-8 
+            section
+                h3 Latest Local News
+
+                article.media
+                    a.pull-left 
+                        img(src="http://placehold.it/100")
+                    .media-body
+                        h4.media-heading 11 files blossom overnight
+                        p.pubDate August, 8 2013 11:56 am
+                        p.content Nam non est nunc. Mauris arcu purus, bibendum lacinia sapien et, aliquam ullamcorper est. Quisque sit amet molestie quam, sit amet consectetur elit. Proin in mi et dolor scelerisque bibendum.
+
+                article.media
+                    a.pull-right 
+                        img(src="http://placehold.it/100")
+                    .media-body
+                        h4.media-heading 11 files blossom overnight
+                        p.pubDate August, 8 2013 11:56 am
+                        p.content Nam non est nunc. Mauris arcu purus, bibendum lacinia sapien et, aliquam ullamcorper est. Quisque sit amet molestie quam, sit amet consectetur elit. Proin in mi et dolor scelerisque bibendum.
+
+                article.media
+                    .media-body
+                        h4.media-heading 11 files blossom overnight
+                        p.pubDate August, 8 2013 11:56 am
+                        p.content Nam non est nunc. Mauris arcu purus, bibendum lacinia sapien et, aliquam ullamcorper est. Quisque sit amet molestie quam, sit amet consectetur elit. Proin in mi et dolor scelerisque bibendum.
+
+                article.media
+                    .media-body
+                        h4.media-heading 11 files blossom overnight
+                        p.pubDate August, 8 2013 11:56 am
+                        p.content Nam non est nunc. Mauris arcu purus, bibendum lacinia sapien et, aliquam ullamcorper est. Quisque sit amet molestie quam, sit amet consectetur elit. Proin in mi et dolor scelerisque bibendum.
+        
+        .col-md-4
+            section
+                h3 Most read acticles
+                ul
+                    li 
+                        a One
+                    li 
+                        a Two
+                    li 
+                        a Three
+                    li 
+                        a Four
+            .ad.text-center
+                img(src="http://placehold.it/300x250&text=Ad")
+    .row
+        
+block right-rail
+    p Ad Here

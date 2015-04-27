@@ -1,0 +1,86 @@
+.videoPageWrapper {
+
+	background-color: #333333;
+
+	.top-vid {
+		text-align: center;
+		padding-top: 20px;
+
+		.yt-vid-information {
+			color: white;
+
+			#vid-title {
+
+			}
+			#vid-pub-date {
+
+			}
+			#vid-description-start {
+
+			}
+		}
+	}
+
+	.videoDivLine {
+		border-top-style: solid;
+		border-top-width: 5px;
+		border-top-color: #666666;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		border-bottom-color: white;
+	}
+	.videoPageHeader {
+		color: white;
+		margin-left: 15px;
+		margin-bottom: 10px;
+	}
+
+	.videoPage {
+		article {
+			.singleVideoFrame {
+				float: left;
+				height: 280px;
+				width: 33%;
+
+				.videoPagePhoto {
+					margin-left: 10px;
+					img {
+						width: 90%
+					}
+
+				}
+				.videoPageTitle {
+					margin-left: 10px;
+
+				}
+				.videoPagePubDate {
+					color: white;
+					margin-left: 10px;
+					font-size: .8em;
+				}
+			}
+		}
+	}
+}
+#vid-description-start {
+	padding: 10px;
+}
+
+@media (min-width: 2px) and (max-width: 767px) {
+	.top-vid {
+
+		.yt-vid-information {
+
+			#vid-title {
+				font-size: 1.3em;
+			}
+			#vid-pub-date {
+				font-size: 1.1em;
+			}
+		}
+	}
+	.singleVideoFrame {
+		height: 180px;
+		width: 45% !important;
+	}
+}

@@ -1,0 +1,154 @@
+	#homeBannerContainer {
+		overflow: hidden;
+		margin: 10px auto;
+		background:#333333;
+		padding-top: 15px;
+		padding-bottom: 3px;
+	}
+	
+	.photobanner {
+		height: 100px;
+
+		.couponHolder {
+			width: 175px;
+			height: 97px;
+			overflow: hidden;
+			float:left;
+			margin-left: 15px;
+
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+
+			&:hover {
+					-webkit-transform: scale(1.4);
+					-moz-transform: scale(1.4);
+					-o-transform: scale(1.4);
+					-ms-transform: scale(1.4);
+					transform: scale(1.4);
+					cursor: pointer;
+				 
+					-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+					-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+					box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+
+				}
+		}
+
+		a {
+
+			img {	
+				border: solid 6px #33333;				
+			}
+		}
+	}
+	
+
+	.largeCoupon {
+		background-color: #333333;
+		text-align: center;
+		padding: 15px;
+	}
+
+	#bannerContainer {
+
+		//width: 2000px;
+		overflow: hidden;
+		//margin: 0px auto;
+
+		background:#333333;
+		padding: 20px 0px 10px 0px;
+		border: 5px solid #CCCCCC;
+		border-radius: 10px;
+		box-shadow: 0 0 10px #888888 inset;
+
+		#first2 {
+			width: 999999;
+			margin-top: 0px;
+		}
+
+		.slideControls {
+			color:white; 
+			font-size: 1.2em;
+			text-align:center;
+
+			.slideButtons {
+				background: url("http://statics.bendbulletin.com/images/arrows.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+				cursor: pointer;
+				height: 58px;
+				position: absolute;
+				top: 50%;
+				width: 45px;
+			}
+			#slideLeft {
+				background-position: left top;
+				left: -25px;
+				&:hover {
+					background-position: left bottom;
+				}
+			}
+			#slideRight {
+				background-position: right top;
+				right: -25px;
+				&:hover {
+					background-position: right bottom;
+				}
+			}
+		}
+
+		.pagePhotoBanner {
+			//height: 233px;
+			width: 4000px;
+			//margin-bottom: 80px;
+			//padding: 8px;
+
+			a {
+				img.nonActiveAd {
+					max-height: 140px;
+					overflow: hidden;
+				}
+				img.activeAd {
+					max-height: 180px;
+					overflow: hidden;
+				}
+				img {
+
+					/*&:hover {
+						-webkit-transform: scale(1.1);
+						-moz-transform: scale(1.1);
+						-o-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						transform: scale(1.1);
+						cursor: pointer;
+					 
+						-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+						-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+						box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+					}*/
+				}
+			}
+		}
+		
+	}
+
+.mobileInstruction {
+	font-size: .8em;
+}
+
+@media (min-width: 769px) {
+	.mobileInstruction {
+		display:none;
+	}
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+	.mobileInstruction {
+		display:block;
+	}
+	#bannerContainer {
+		overflow: visible;
+	}
+}
+	

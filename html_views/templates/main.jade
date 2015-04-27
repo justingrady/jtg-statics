@@ -1,0 +1,128 @@
+include ../mixins/main-mixins
+block vars
+!!! 5
+html
+  head
+    if typeof(pageTitle) !== 'undefined'
+        title= pageTitle
+    else 
+        title Unnamed Template
+    link(href="../css/screen.css", rel="stylesheet")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    link(rel='search', type='application/opensearchdescription+xml', href='http://statics.bendbulletin.com/opensearch.xml', title='The Bulletin')
+    link(rel='fluid-icon', href='https://statics.bendbulletin.com/images/fluidicon.png', title='GitHub')
+    link(rel='apple-touch-icon', sizes='57x57', href='https://statics.bendbulletin.com/images/apple-touch-icon-114.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='https://statics.bendbulletin.com/images/apple-touch-icon-114.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='https://statics.bendbulletin.com/images/apple-touch-icon-144.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='https://statics.bendbulletin.com/images/apple-touch-icon-144.png')
+    link(rel='logo', type='image/svg', href='https://statics.bendbulletin.com/images/thebulletin-logo.svg')
+    meta(property='og:image', content='#')
+    meta(name='msapplication-TileImage', content='https://statics.bendbulletin.com/images/bb-windows-tile.png')
+    meta(name='msapplication-TileColor', content='#035CB6')
+    block head
+  body
+    .ads-top
+        .container 
+            .row
+                .adunit
+
+    header#header.container
+        .row.masthead
+            .col-md-3.weather-top
+                a.pull-left 
+                    img(src="http://placehold.it/72&text=Sun :)")
+                .media-body
+                    h3.media-heading 81&deg; F
+                    a(href="#") Complete Central Oregon Forecast
+             
+            .col-md-6.logo
+                // h1.logo The Bulletin
+                a(title='BendBulletin.com home', href='http://www.bendbulletin.com/')
+                    img(alt='The Bulletin', src='http://statics.bendbulletin.com/images/bulletin_md_logo.png')
+                
+                p Serving Central Cleveland since 1903 
+ 
+            .col-md-3.search
+                +search
+        .row
+            nav#nav.navbar.navbar-bulletin(role='navigation')
+                .navbar-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href="/")
+                        img(src="http://statics.bendbulletin.com/images/thebulletin_retro_nav_small.png")
+
+                .collapse.navbar-collapse
+                     +list(['Local & State', 'Business', 'Sports', 'Lifestyle', 'Entertainment', 'Opinion', 'Events', 'Real Estate', 'Subscriptions', 'Classifieds', 'Publications'], 'nav navbar-nav')
+
+                    //form.navbar-form.pull-right(action="")
+                        input.form-control.col-md-2(type="text", placeholder="Search")
+
+        if typeof(path) !== 'undefined'
+            .row
+                +breadcrumb(['Home', 'Local & State', '3-vehicle crash south of Madras'])
+        block header
+
+    .container
+        block content
+
+    //- This footer is a little large, might break it into its own file
+    footer#footer
+        .ads-bottom
+            .container
+                .row
+                    .adunit
+ 
+        .footer-bottom
+            .container
+                .row
+                    .col-md-3
+
+                        h4 The Bulletin
+                        +list(['Contact Us', 'Newsroom Staff List', 'Advertise with Us', 'Frequently Asked Questions', 'Privacy Policy', 'Terms of Use', 'Careers'], 'nav')
+
+                        h4 Connect with The Bulletin 
+                        ul.social.clearfix
+                            li.facebook
+                                a Facebook
+                            li.twitter 
+                                a Twitter
+                            li.youtube 
+                                a YouTube
+                            li.rss 
+                                a RSS
+
+                    .col-md-3
+
+                        h4 Subscriptions
+                        +list(['Vacation Hold', 'Find a Newsstand', 'Back Copies', 'Share Because You Care', 'Newspapers In Education', 'Subscription Rates', 'General Account Help'], 'nav')
+
+                        h4 Our Partners
+                        +list(['Baker City Herald', 'La Grand Observer', 'Northwest Oregon Classifieds', 'Union Democrat', 'Del Norte Triplicate', 'Curry Coastal Pilot', 'Central Oregon Nickel', 'Bend Homes', 'Northwest Web Press'], 'nav')
+
+                    .col-md-3
+                        h4 Quick Links
+                        +list(["Today's Paper", 'Frequency Music Blog', 'Pulse Magazine', 'Special Ad Sections', 'Restaurant Guide', 'Golf Guide', 'Obituaries', 'Milestones', 'TV Listings', 'Movie Listings & Reviews', 'ODOT Web Cams', 'Sudoku', 'Oregon Lottery', 'Parade Magazine', 'Archive', 'Submit an Event'], 'nav')
+                        
+                    .footer-subscribe.col-md-3.text-center
+                        img(src="http://statics.bendbulletin.com/images/thebulletin_retro_square.png")
+                        p Explore more of Central Oregon with a subscription to The Bulletin.
+                        a.btn.btn-primary.btn-lg(href="#") subscribe
+                .row.text-center.footer-copyright
+                    hr
+                    | &copy; 2014 The Bulletin | A Western Communications Company | All Rights Reserved | 
+                    a.address(href='https://maps.google.com/maps?q=Western+Communications+Inc,+1777+South+West+Chandler+Avenue,+Bend,+OR&hl=en&sll=44.061136,-121.314644&sspn=0.170477,0.377998&oq=Western+Communications,+1777+Chandler+Ave&hq=Western+Communications+Inc,+1777+South+West+Chandler+Avenue,+Bend,+OR&radius=15000&t=m&z=13') 1777 Chandler Ave, Bend, OR 97702
+                    |  | 
+                    a.credit(href='mailto:webmaster@bendbulletin.com') webmaster@bendbulletin.com
+                    |  |  
+                    a.tel(href='tel:541-382-1811') 541-382-1811
+
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="../js/bootstrap.js")
+    script(src="../js/main.min.js")
+    script(src="https://stage.syncaccess.net/wc/bb/api/scripts/syncwall")

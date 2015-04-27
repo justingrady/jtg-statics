@@ -1,0 +1,80 @@
+
+
+.infoTitle {
+	font-size: 1.1em;
+	font-weight: 600;
+}
+	
+	
+.staffBio img {
+	width: 250px;
+	text-align: right;
+}
+
+/////////// staffGrid.csp //////////////////////////////////////////////////////////////////////////
+
+.sepLine {
+    width: 90%;
+    border-bottom: 4px solid rgb(185, 185, 185);
+}
+  
+.sepLineSmall {
+    padding-top:3px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    width: 90%;
+}
+
+.staffList {
+    padding-top:3px;
+    width: 90%;
+    font-size: .9em;
+}
+
+.deptTitle {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+  
+.storyBlock {
+    margin-top: 15px;
+    width: 90%;
+}
+  
+.staffBio {
+    width: 98%;
+}
+
+.staffImageBlock {
+	text-align: right;
+	padding-right: 3px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+	.staffBio img {
+		width: 220px;
+	}
+
+}
+
+@media (min-width: 200px) and (max-width: 991px) {
+	.staffImageBlock {
+		text-align: center;
+		padding-right: 0px;
+	}
+}
+
+
+///////  not being used right now //////////////////////////////////////////////
+
+#extraInfo > .sepLineSmall {
+    padding-bottom:0px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    width: 100%;
+}
+
+#extraInfo {
+	display:none;
+	width: 98%;
+}
+

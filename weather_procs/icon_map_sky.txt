@@ -1,0 +1,5 @@
+Broken Clouds, 66
+Clear, 85
+Few Clouds, 66
+Overcast, 67
+Scattered Clouds, 66

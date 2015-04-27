@@ -1,0 +1,25 @@
+Funnel Cloud, 78
+Thunderstorm, 84
+Heavy Snow, 83
+Light Snow, 77
+Moderate Snow, 83
+Blowing Snow, 81
+Snow Showers, 74
+Ice Pellets, 89
+Freezing Rain, 89
+Freezing Drizzle, 90
+Hail, 88
+Heavy Rain, 82
+Light Rain, 76
+Rain Showers, 87
+Moderate Rain, 82
+Drizzle, 76
+Smoke, 75
+Clear, 85
+Mist, 70
+Light Fog, 70
+Heavy Fog, 70
+Moderate Fog, 70
+Sand / Dust Storm, 68
+Haze, 72
+Broken Clouds, 66

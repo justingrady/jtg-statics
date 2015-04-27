@@ -1,0 +1,381 @@
+$footerPxSize: 80px;
+
+.SportsMenu {
+	color: #2E9AFE;
+}
+.SportsDiv {
+	background-color: #2E9AFE;
+}
+.NewsMenu {
+	color: #FE2EF7;
+}
+.NewsDiv {
+	background-color: #FE2EF7;
+}
+.SlideshowsMenu {
+	color: #FFBF00;
+}
+.SlideshowsDiv {
+	background-color: #FFBF00;
+}
+.EntertainmentMenu {
+	color: #DF0174;
+}
+.EntertainmentDiv {
+	background-color: #DF0174;
+}
+.VideosMenu {
+	color: #A5DF00;
+}
+.VideosDiv {
+	background-color: #A5DF00;
+}
+.FeaturesMenu {
+	color: #088A85;
+}
+.FeaturesDiv {
+	background-color: #088A85;
+}
+.LocalMenu {
+	color: #8904B1;
+}
+.LocalDiv {
+	background-color: #8904B1;
+}
+.StateMenu {
+	color: #F7819F;
+}
+.StateDiv {
+	background-color: #F7819F;
+}
+.NationMenu {
+	color: #B40431;
+}
+.NationDiv {
+	background-color: #B40431;
+}
+.HealthMenu {
+	color: #58ACFA;
+}
+.HealthDiv {
+	background-color: #58ACFA;
+}
+.ObituariesMenu {
+	color: #FE2E2E;
+}
+.ObituariesDiv {
+	background-color: #FE2E2E;
+}
+.BusinessMenu {
+	color: #8A4B08;
+}
+.BusinessDiv {
+	background-color: #8A4B08;
+}
+.LifestyleMenu {
+	color: #086A87;
+}
+.LifestyleDiv {
+	background-color: #086A87;
+}
+.OpinionMenu {
+	color: #8904B1;
+}
+.OpinionDiv {
+	background-color: #8904B1;
+}
+.OutdoorsMenu {
+	color: #380B61;
+}
+.OutdoorsDiv {
+	background-color: #380B61;
+}
+.WebpagesMenu {
+	color: #dddddd;
+}
+.WebpagesDiv {
+	border: 1px solid #000000;
+}
+.NoneMenu {
+	color: white;
+}
+.NoneDiv {
+	border: 1px solid #000000;
+	background-color: white;
+	color: black !important;
+}
+
+body.teenPageBody {
+	background-color: black;
+	color: white;
+
+	.teenFooter {
+		height: $footerPxSize;
+		background-color: #444444;
+		background-repeat: repeat;
+		background-position: 0% 0%;
+		position: fixed;
+		bottom: 0pt;
+		left: 0pt;
+		width: 100%;
+		display: none;
+		text-align: center;
+
+		.footerContents {
+			height: $footerPxSize;
+			width: 100%;
+			margin: auto;
+			padding-top: 20px;
+		}
+	}
+
+	.teen-page-wrap {
+		.teenBody {
+			.teenStoryLists {
+				.teenStorySummaryWrap {
+					background: #dddddd;
+					border-radius: 10px;
+					color: black;
+
+					.teenSummaryText {
+						background-color: white;
+						border-radius: 5px;
+						a {
+							color: black;
+							text-decoration: none;
+						}
+					}
+					.teenCatWrap {
+						//background-color: #660099;
+						color: white;
+						font-size: 1.2em;
+						padding: 5px;
+						border-radius: 5px;
+						margin-left: 5%;
+						width: 90%;
+					}
+				}
+			}
+			.teenRightRail {
+				border-radius: 5px;
+				background-color: #333333;
+				//height: 1000px;
+				padding: 10px 5px;
+				margin-top: 20px;
+				.teenFilter {
+					list-style-type: none;
+				}
+				.teenRailTitle {
+					border-bottom: 1px solid #555555;
+					padding-left: 8px;
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: 1200px) and (max-width: 7000px) {
+	.teen-page-wrap {
+		img {
+			// width 100% inline styled teenHomeHeader.csp
+		}
+		.menuLogoWrapper {
+			.teenLogoDiv {
+				margin-top: -80px;
+				padding: 0px;
+
+				img {
+					width: 40%;
+					margin-left: 30%;
+				}
+			}
+			.teenNavBar {
+				border-bottom: 5px solid white;
+				text-align:center;
+			}
+		}
+		.teenBody {
+			width: 60%;
+			margin-left: 20%;
+			margin-top: 10px;
+
+			.teenStoryLists {
+				.teenStorySummaryWrap {
+					padding: 15px;
+					margin-top: 20px;
+
+					.teenSummaryText {
+						margin-left: 5%;
+						width: 90%;
+						padding: 14px;
+						font-size: 1.7em;
+						margin-top: 5px;
+					}
+					.teenSummaryTextNoPhoto {
+						margin-left: 5%;
+						padding: 10px 0px;
+						font-size: 3em;
+						a {
+							color: black;
+							text-decoration: none;
+						}
+					}
+					.teenSummaryImage {
+						margin-left: 5%;
+						border-radius: 5px;
+					}
+					.teenCatWrap {
+						padding: 5px;
+						margin-left: 20px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@media (min-width: 400px) and (max-width: 1199px) {
+	.teen-page-wrap {
+		img {
+			// width 100% inline styled teenHomeHeader.csp
+		}
+		.menuLogoWrapper {
+			.teenLogoDiv {
+				margin-top: -80px;
+				padding: 0px;
+
+				img {
+					width: 40%;
+					margin-left: 30%;
+				}
+			}
+			.teenNavBar {
+				border-bottom: 5px solid white;
+				text-align:center;
+			}
+		}
+		.teenBody {
+			width: 94%;
+			margin-left: 3%;
+			margin-top: 5px;
+
+			.teenStoryLists {
+				.teenStorySummaryWrap {
+					padding: 15px;
+					margin-top: 20px;
+
+					.teenSummaryText {
+						margin-left: 5%;
+						width: 90%;
+						padding: 14px;
+						font-size: 1.7em;
+						margin-top: 5px;
+					}
+					.teenSummaryTextNoPhoto {
+						margin-left: 5%;
+						padding: 10px 0px;
+						font-size: 3em;
+						a {
+							color: black;
+							text-decoration: none;
+						}
+					}
+					.teenSummaryImage {
+						margin-left: 5%;
+						border-radius: 5px;
+					}
+					.teenCatWrap {
+						padding: 5px;
+						margin-left: 20px;
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@media (min-width: 1px) and (max-width: 399px) {
+	.teen-page-wrap {
+		img {
+			// width 100% inline styled teenHomeHeader.csp
+		}
+		.menuLogoWrapper {
+			.teenLogoDiv {
+				margin-top: -40px;
+				padding: 0px;
+
+				img {
+					width: 60%;
+					margin-left: 20%;
+				}
+			}
+			.teenNavBar {
+				border-bottom: 5px solid white;
+				text-align:center;
+			}
+		}
+		.teenBody {
+			width: 98%;
+			margin-left: 1%;
+			margin-top: 5px;
+
+			.teenStoryLists {
+				.teenStorySummaryWrap {
+					padding: 5px;
+					margin-top: 10px;
+
+					.teenSummaryText {
+						margin-left: 5%;
+						width: 90%;
+						padding: 5px;
+						font-size: 1.2em;
+						margin-top: 5px;
+					}
+					.teenSummaryTextNoPhoto {
+						margin-left: 5%;
+						padding: 10px 0px;
+						font-size: 3em;
+						a {
+							color: black;
+							text-decoration: none;
+						}
+					}
+					.teenSummaryImage {
+						margin-left: 5%;
+						border-radius: 5px;
+					}
+					.teenCatWrap {
+						margin-left: 10px;
+						margin-bottom: 5px;
+					}
+				}
+			}
+			.teenRightRail {
+				border-radius: 2px;
+				padding: 10px 5px;
+				margin-top: 20px;
+				.teenFilter {
+					list-style-type: none;
+					padding-left: 0px;
+				}
+				.teenRailTitle {
+					border-bottom: 1px solid #555555;
+					padding-left: 2px;
+					font-size: 1em;
+				}
+			}
+		}
+
+	}
+	.teenFooter {
+		height: 40px;
+	}
+}
+
+

@@ -1,0 +1,24 @@
+.OUTBRAIN {
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+	margin: 2em 0;
+	display: block;	
+}
+
+.OUTBRAIN div.item-container {
+	margin: 0 1em 0 0 !important;
+	&:nth-last-of-type(1) {
+		margin-right: 0;
+	}
+}
+
+.OUTBRAIN div.item-container img.strip-img {
+	border: 1px solid #cccccc !important;
+}
+
+.OUTBRAIN div.item-container .ob-tcolor {
+	color: #428bca;
+	&:hover {
+		text-decoration: underline;
+	} 
+}

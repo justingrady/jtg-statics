@@ -1,0 +1,199 @@
+/**
+ * Mailchimp newsletter styles
+ 
+ * @author	Justin Grady
+ * @created	Fri Jul 11 11:56:51 PDT 2014
+ */
+
+/* ---------- main newsletter singup page ---------- */
+
+/* styles for icons in input fields
+http://stackoverflow.com/questions/18838964/add-bootstrap-glyphicon-to-input-box
+*/
+
+.right-inner-addon {
+	position: relative;
+}
+.right-inner-addon input {
+	padding-right: 30px;    
+}
+.right-inner-addon i {
+	position: absolute;
+	right: 10px;
+	padding: 10px 12px;
+	pointer-events: none;
+}
+
+.left-inner-addon {
+	position: relative;
+}
+.left-inner-addon input {
+	padding-left: 30px;    
+}
+.left-inner-addon i {
+	position: absolute;
+	padding: 10px 12px;
+	pointer-events: none;
+}
+
+.mc-nl-head {
+	margin: 2em 0 1em 0;
+}
+
+.mc-nl-copy {
+	height: 370px;
+	margin: 1em 0;
+
+	img {
+		position: absolute;
+		z-index: -5;
+		top: 0;
+	}
+
+	div {
+		position: absolute;
+		top: 15px;
+		right: 30px;
+		background-color: #000000;
+		z-index: -2;
+		opacity: 0.5;
+		height: 333px;
+		width: 270px;
+	}
+
+	p {
+		position: absolute;
+		top: 25px;
+		right: 35px;
+		color: #ffffff;
+		z-index: 0;
+		width: 250px;
+		font-size: 1.2em;
+		line-height: 1.8em;
+	}
+
+}
+
+.mc-nl-sample {
+	img {
+		margin: 0 0 1em 0;
+	}
+}
+
+.mc-nl-head-sm {
+
+}
+
+.mc-nl-head-lg {
+	p {
+		margin: 1em 0;
+	}
+
+}
+
+
+
+@media (max-width: 768px) {
+	  .mc-nl-copy {
+		display: none;
+		}
+	}
+
+@media (max-width: 992px) {
+	  .mc-nl-sample {
+		display: none;
+		border: 5px solid red;
+		}
+	}
+
+#mc_embed_signup {
+
+	padding: 1em;
+	border: 5px solid #cccccc;
+	/* border-radius: 1em; */
+
+	.indicates-required {
+		margin: 0 0 1em 0;
+		padding: 0 0 0.5em 0;
+		border-bottom: 1px dotted #ececec;
+		font-size: 0.8em;
+		color: #333333;
+
+		.badge {
+			background-color: #e67e22;
+			color: #000000;
+			font-weight: bold;
+		}
+	}
+
+	.form-group {
+		padding: 0 0 2em 0 !important;
+
+		label {
+			font-weight: normal;
+			padding: 0.5em 0 0 0;
+		}
+	}
+
+	button {
+		font-weight: normal;
+	}
+}
+
+.footernlform {
+	/* background-color: #4a4a4a; */
+	/* background-color: #333333; */
+	margin: 2em 0 0 0;
+	/* padding: 0.25em 1em 1em 1em; */
+	border: 5px solid #cccccc;
+
+	h4 {
+		margin: 0 0 0.75em 0;
+		letter-spacing: 0.05em;
+	}
+
+	p {
+		margin: 0 0;
+	}
+
+	form {
+		margin: 1em 0 0 0;
+		width: 90%;
+	}
+
+	.articlenlinfo {
+		display: none;
+	}
+
+}
+
+@mixin articlenlinfobox($bkcolor,$txcolor) {
+	display: block;
+	padding: 0.25em 1em 1em 1em;
+	background-color: $bkcolor;
+	border: 1px solid $bkcolor;
+	color: $txcolor;
+
+	a {
+		color: $txcolor;
+		text-decoration: underline;
+	}
+}
+
+.articlenlform {
+	@include articlenlinfobox(#333333,#ffffff);
+}
+
+.articlenlinfo-step {
+	@include articlenlinfobox(#FF9900,#000000);
+}
+
+.articlenlinfo-alert {
+	@include articlenlinfobox(#ffff00,#000000);
+}
+
+.articlenlinfo-success {
+	@include articlenlinfobox(#009900,#ffffff);
+}
+
+

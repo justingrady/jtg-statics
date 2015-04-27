@@ -1,0 +1,527 @@
+/***************************************************************************************
+	ITEMS THE SAME FOR ALL SCREEN SIZES
+***************************************************************************************/
+	p.PULSE_body_w_drop_cap:first-letter {
+		float: left;
+		font-weight: bold;
+		font-size: 4em;
+		line-height: .6em;
+		padding-top: 5px;
+		padding-right: 4px;
+		font-family: Georgia;
+	}
+
+	.largeLayoutTitleDiv {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+
+		.largeLayoutTextTitleTextWrap {
+			text-align: center;
+			color: white;
+			font-weight: bold;
+
+			.layoutNavigation {
+				.navList {
+					list-style-type: none;
+					padding: 0px;
+					margin-top: 20px;
+					li {
+						display: inline;
+						border-right: 2px solid #eeeeee;
+
+						&:last-child {
+							border-right: none;
+						}
+
+						a {
+							text-decoration: none;
+							color: #eeeeee;
+							padding: 10px;
+							
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.img {
+		width: 100%;
+	}
+	
+	.bigLayoutStoryBody {
+		p.PULSE_chap_head {
+			font-size: 2em;
+		}
+		p.PULSE_body_copy {
+			font-size: 1.2em;
+		}
+		p.NormalParagraphStyle {
+			font-size: 1.2em;
+		}
+		p.PULSE_body_w_drop_cap {
+			font-size: 1.2em;
+		}
+
+		.title{
+			font-weight: bold;
+			font-size: 5em;
+			line-height: 1.1em;
+		}
+		.subtitle{
+			font-size: 2.5em;
+		}
+		.bylinePubdate {
+			border-top: 2px solid #999;
+			border-bottom: 2px solid #999;
+			margin-top: 20px;
+			margin-bottom: 30px;
+			#byline {
+				font-size: 1.3em;
+				text-align: left;
+			}
+			#pubdate {
+				font-size: 1.1em;
+				font-style: italic;
+				text-align: right;
+			}
+		}
+		.inStoryPhotoBox {
+			.capCred {
+				font-size: .8em;
+				text-align: left;
+
+				.credit {
+					font-style: italic;
+				}
+			}
+		}
+		.picPullLeft {
+			float: left;
+			text-align: left;
+			margin-right: 15px;
+			margin-bottom: 20px;	
+		}
+		.picPullCenter {
+			text-align: right;
+			margin: 20px auto;
+			width: 100%;
+		}
+		.picPullCenter > img {
+			width: 100%;
+		}
+		.picPullRight {
+			float: right;
+			text-align: right;
+			margin-left: 15px;
+			margin-bottom: 20px;
+		}
+		.picFullWidth {
+			width: 100%;
+			margin-left: -22%;
+			margin-bottom: 20px;
+		}
+		.picFullWidth > .capCred {
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-left: 10%;
+			width: 120%;
+		}
+
+		.ssPullLeft {
+			float: left;
+			text-align: left;
+			margin-right: 15px !important;
+			margin-bottom: 20px;	
+			width: 60%;
+		}
+		.ssPullCenter {
+			text-align: right;
+			margin: 20px auto;
+			width: 100%;
+			.inner-item {
+				img {
+					height: 400px !important;
+					max-height: 400px !important;
+				}
+			}
+		}
+		
+		.ssPullRight {
+			float: right;
+			text-align: right;
+			margin-left: 15px !important;
+			margin-bottom: 20px;
+			width: 60%;
+		}
+		.ssFullWidth {
+			width: 100%;
+			margin-left: -22%;
+			margin-bottom: 20px;
+		}
+		
+		.vidPullLeft {
+			//width: 300px;
+			float: left;
+			text-align: left;
+			margin-right: 15px;
+			margin-bottom: 20px;
+			
+		}
+		.vidPullCenter {
+			//width: 500px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.vidPullRight {
+			//width: 300px;
+			float: right;
+			text-align: right;
+			margin-left: 15px;
+			margin-bottom: 20px;
+		}
+		.vidFullWidth {
+			width: 100%;
+			margin-left: -22%;
+			margin-bottom: 20px;
+		}
+		.widgetPullLeft {
+			width: 300px;
+			float: left;
+			text-align: left;
+			margin-right: 15px;
+			margin-bottom: 20px;
+			
+		}
+		.widgetPullCenter {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.widgetPullRight {
+			width: 300px;
+			float: right;
+			text-align: right;
+			margin-left: 15px;
+			margin-bottom: 20px;
+		}
+		.widgetFullWidth {
+			width: 100%;
+			margin-left: -22%;
+			margin-bottom: 20px;
+		}
+		.inStoryQuoteBox {
+			text-align: left;
+			padding: 5px;
+			font-size: 2.5em;
+		}
+		.quotePullLeft {
+			width: 50%;
+			float: left;
+			margin-right: 15px;
+			margin-bottom: 20px;
+			
+		}
+		.quotePullCenter {
+			margin: 20px auto;
+			text-align: center;
+			width: 100%;
+
+		}
+		.quotePullRight {
+			width: 50%;
+			float: right;
+			margin-left: 15px;
+			margin-bottom: 20px;
+		}
+		.quoteFullWidth {
+			width: 100%;
+			margin-left: -22%;
+			margin-bottom: 20px;
+			padding: 10px 15px 0;
+			text-align: center;
+		}
+		.pullQuoteCredit {
+			font-size: .7em;
+			color: #666666;
+			font-style: italic;
+		}
+		.inStoryToolBox {
+			text-align: left;
+			padding: 15px;
+			font-size: .9em;
+			max-height: 400px;
+			overflow-y: scroll;
+		}
+		.toolboxPullLeft {
+			width: 50%;
+			float: left;
+			margin-right: 15px;
+			margin-bottom: 20px;
+			
+		}
+		.toolboxPullCenter {
+			margin: 20px auto;
+			text-align: center;
+			width: 100%;
+
+		}
+		.toolboxPullRight {
+			width: 50%;
+			float: right;
+			margin-left: 15px;
+			margin-bottom: 20px;
+		}
+		.toolboxFullWidth {
+			width: 100%;
+			margin-left: -22%;
+			margin-bottom: 20px;
+			padding: 10px 15px 0;
+			text-align: center;
+		}
+	}
+			
+	.largeLayoutPublished {
+		font-size: 1em;
+		font-style: italic;
+	}
+		
+	.anchorTag {
+		margin-top: -80px;
+	}
+
+	.storyDivider {
+		width: 70%;
+		border-bottom: 3px solid #555;
+		marging-top: 30px;
+		margin-bottom: 30px;
+		margin-left: 15%;
+	}
+	.sharingSS {
+		margin-right: 15%;
+	}
+	.interstitialOverlay {
+		position: fixed;
+		left: 10%;
+		top: 50px;
+		width: 80%;
+		height: 100%;
+		background-color: rgba(0,0,0,.8);
+		text-align: center;
+		color: white;
+		border-radius: 15px;
+	}
+	.overlayInstructions {
+		margin: 25px 65% 0;
+		margin-top: 15px;
+		border: 2px solid white;
+		padding: 8px;
+		width: 200px;
+		cursor: pointer;
+	}
+	.interstitialAd {
+		margin: -40px auto;
+		width: 300px;
+	}
+
+/***************************************************************************************
+	MEDIA QUERIES -- 768 and up
+***************************************************************************************/
+
+	@media (min-width: 768px) {
+		.largeLayoutTextTitleTextWrap {
+			width: 70%;
+			margin-left: 15% ;
+
+			.largeLayoutTitleText{
+				font-size: 5.5em;
+			}
+			.largeLayoutSubtitleText{
+				font-size: 3em;
+			}
+		}
+		.bigLayoutStoryBody {
+			width: 70% !important;
+			margin-left: 15%;
+			margin-top: 25px;
+		}
+	}
+
+/***************************************************************************************
+	MEDIA QUERIES -- 100 - 1085 (THE POINT TEXT SHOULDN'T BE NEXT TO PHOTO)
+***************************************************************************************/
+
+@media (min-width: 100px) and (max-width: 1085px) {
+	.bigLayoutStoryBody {
+		width: 95%;
+		margin-top: 50px;
+		.picFullWidth {
+			margin: 0px auto;
+			text-align:center;
+		}
+	}
+	.picPullLeft {
+		float: none;
+		text-align: center;
+		margin-bottom: 8px;
+			
+	}
+	.picPullRight{
+		float: none;
+		text-align: center;
+		margin-bottom: 8px;
+			
+	}
+	
+	.vidPullLeft {
+		float: none;
+		text-align: center;
+		margin-bottom: 8px;	
+	}
+	.vidPullRight{
+		float: none;
+		text-align: center;
+		margin-bottom: 8px;	
+	}
+	.vidFullWidth {
+		margin-left: 0px !important;
+	}
+	.widgetPullLeft {
+		float: none;
+		text-align: center;
+		margin-bottom: 8px;	
+	}
+	.widgetPullRight{
+		float: none;
+		text-align: center;
+		margin-bottom: 8px;	
+	}
+	.quoteFullWidth {
+		margin-left: -2% !important;
+	}
+
+}
+
+
+
+/***************************************************************************************
+	MEDIA QUERIES -- 100 - 767 (MOBILE DEVICES)
+***************************************************************************************/
+	@media (min-width: 100px) and (max-width: 767px) {
+		.largeLayoutTextTitleTextWrap {
+			width: 96%;
+			margin-left: 2%;
+
+			.largeLayoutTitleText{
+				font-size: 1.5em;
+			}
+			.largeLayoutSubtitleText{
+				font-size: 1em;
+			}
+			.layoutNavigation {
+				.navList {
+					li {
+						font-size: .8em;
+					}
+				}
+			}
+		}
+		.bigLayoutStoryBody {
+			width: 95%;
+			margin-left: 2%;
+			margin-top: 0px;
+
+			.title{
+				font-size: 1.5em;
+			}
+			.subtitle{
+				font-size: 1em;
+			}
+			.bylinePubdate {
+				margin-top: 3px;
+				margin-bottom: 3px;
+
+				#pubdate {
+					font-size: .8em;
+					text-align: left;
+				}
+				#byline {
+					font-size: .8em;
+					padding-top: 7px;
+				}
+			}
+			.picFullWidth {
+				width: 100%;
+				margin-left: 0px;
+				margin-bottom: 20px;
+			}
+			.ssPullCenter {
+				text-align: right;
+				margin: 5px auto;
+				width: 100%;
+				.inner-item {
+					img {
+						height: 200px !important;
+						max-height: 200px !important;
+					}
+				}
+			}
+			.vidFullWidth {
+				width: 100%;
+				margin-left: 0px;
+				margin-bottom: 20px;
+			}
+			.widgetFullWidth {
+				width: 100%;
+				margin-left: 0px;
+				margin-bottom: 20px;
+			}
+			.widgetPullRight {
+				float: none;
+				text-align: center;
+				width: 90%;
+			}
+			.widgetPullLeft {
+				float: none;
+				text-align: cneter;
+				width: 90%;
+			}
+			.inStoryQuoteBox {
+				padding: 5px;
+				font-size: 1.6em;
+			}
+			.quotePullRight {
+				float: none;
+				margin: 0 auto;
+				width: 90%;
+			}
+			.quotePullLeft {
+				float: none;
+				margin: 0 auto;
+				width: 90%;
+			}
+			.inStoryToolBox {
+				margin-bottom: 8px !important;
+			}
+			.toolboxPullRight {
+				float: none;
+				margin: 0 auto;
+				width: 95%;
+			}
+			.toolboxPullLeft {
+				float: none;
+				margin: 0 auto;
+				width: 95%;
+			}
+		}
+	}
+
+/***************************************************************************************
+	MEDIA QUERIES -- 100 - 767 (CELL PHONES)
+***************************************************************************************/
+	@media (min-width: 100px) and (max-width: 400px) {
+		.interstitialOverlay {
+			display: none;
+		}
+	}

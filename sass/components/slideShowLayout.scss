@@ -1,0 +1,833 @@
+
+.text-overlay-slideshow {
+	//display: none;
+	position:absolute;
+	margin: 0 auto;
+	padding: 3px 20px 10px 20px;
+	top: 200px;
+	left: 25%;
+	width: 50%;
+	max-height: 50%;
+	top: 15%;
+	overflow: auto;
+	background-color: rgba( 50, 50, 50, .6);
+	border: 5px solid;
+	border-color: grey;
+	border-radius: 15px;
+	color: white;
+
+	.close-box {
+		width: auto;
+		float: right;
+		margin: 3px -10px 0px 10px;
+		text-align: right;
+		background-color: rgba(0,0,0,.8);
+		border: 3px solid;
+		border-color: grey;
+
+		&:hover {
+			cursor: pointer; 
+			cursor: hand;
+			border-color: white;
+		}
+		.close-box-text {
+			
+			color: white;
+			margin-bottom: 0px;
+			padding: 3px;
+			right: 100px;
+		}
+	}
+	.text-overlay-text {
+		padding-top: 10px;
+		font-size: 1.2em;
+		.slideShowPub {
+			font-style: italic;
+			font-size: .6em;
+		}
+		.closeOverlayInstructions {
+			width: 115px;
+			border: 2px solid white;
+			border-radius: 3px;
+			text-align: center;
+			font-size: .7em;
+			padding: 2px;
+			float: right;
+		}
+	}
+}
+
+/*************************************************************************
+	slideshow section page css
+**************************************************************************/
+.slideShowWrapper {
+	background-color: #222222;
+
+	.title {
+		color: white;
+		padding: 15px;
+		text-align: center;
+		margin: 0px;
+	}
+	.titleDivLine {
+		border-bottom: 2px solid #FFFFFF;
+		border-top: 5px solid #666666;
+	}
+	.photoBox {
+		text-align: center;
+		margin-top: 15px;
+		padding-bottom: 15px;
+		width: 30%;
+		margin-left: 2.5%;
+		border: none;
+
+		a {
+			color: white;
+			text-decoration: none;
+			font-size: 1.2em;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (min-width: 600px) and (max-width: 920px) {
+	.text-overlay-slideshow {
+
+		padding: 3px 8px 5px 8px;
+		top: 10%;
+		max-height: 40%;
+		width: 64%;
+		left: 18%;
+		border: 5px solid;
+		border-color: grey;
+		border-radius: 5px;
+		font-size: 1em;
+
+		.close-box {
+			margin: 3px -3px 0px 3px;
+			border: 2px solid;
+
+			.close-box-text {
+				padding: 3px;
+			}
+		}
+		.text-overlay-text {
+			padding-top: 5px;
+		}
+	}
+}
+
+@media (min-width: 1px) and (max-width: 600px) {
+
+	.text-overlay-slideshow {
+
+		padding: 3px 8px 5px 8px;
+		border: 5px solid;
+		border-color: grey;
+		border-radius: 5px;
+		font-size: .8em;
+		width: 70%;
+		left: 15%;
+		top: 10%;
+		max-height: 40%;
+
+		.close-box {
+			margin: 3px -3px 0px 3px;
+			border: 2px solid;
+
+			.close-box-text {
+				padding: 3px;
+			}
+		}
+		.text-overlay-text {
+			padding-top: 5px;
+		}
+	}
+	
+}
+
+/*************************************************************************
+	NEW BIG slideshow layout - when fully implemented, delete old slideshow css
+**************************************************************************/
+
+#bigSlideShow {
+	margin-top: .5%;
+	margin-bottom: 4px;
+	height: 790px;
+		
+	.carousel-control {
+          position: absolute;
+          top: 100px;
+          height: 50px;
+          width: 50px;
+          margin-top: -25px;
+          margin-top: 0;
+          font-size: 60px;
+          font-weight: 100;
+          line-height: 25px;
+          text-shadow: 0 1px 1px rgba(0,0,0,.4);
+          background-color: transparent;
+          border: 0;
+          z-index: 10;
+          text-align: center;
+          background: #222222;
+          border: 3px solid #ffffff;
+          -webkit-border-radius: 30px;
+         -moz-border-radius: 30px;
+          border-radius: 30px;
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          margin-left: 5px;
+          margin-right: 5px;
+          bottom: 30%;
+    }
+
+	.bigSlideShowCarInner {
+		height: 100%;
+		position: relative;
+		width: auto;
+
+		.bigSlideItem {
+			height: 100%;
+			text-align: center;
+			margin: 0 auto;
+
+			.bigSlideBox {
+				position: relative;
+				//text-align: center;
+				height: 100%;
+				width: auto;
+				//vertical-align: bottom;
+
+				img{
+					//position: absolute;
+					//z-index: 1;
+					height: 100%;
+				}
+
+				.bigSlideCaption {	
+					//z-index: 1;
+					color: white;
+					background-color: rgba(0, 0, 0, 0.6);
+					height: auto;
+					position: relative;
+					margin: 0 auto;
+					padding: 10px;
+					font-family: Arial;
+					font-size: 12px;
+					font-weight: normal;
+					line-height: 18px;
+				}
+				.moreSSWrap {
+					width: 76%;
+					margin-left: 12%;
+					margin-top: 5%;
+					.viewMoreTitle {
+						color:white;
+					}
+				}
+			}
+		}
+		div#moreSSSlide{
+			overflow: auto;
+		}
+	}
+
+	.swipeBox {
+		position: absolute;
+		width: 60%;
+		height: 60%;
+		top: 20%;
+		left: 20%;
+	}
+	.hideOverlayBox {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 100;
+	}
+}
+	
+	
+.hideCapDiv {
+	position: absolute;
+	top: 82%;
+	left: 2%;
+	text-align: center;
+
+	.hideCap {
+		border: 2px solid #CCCCCC;
+		border-radius: 4px;
+		width: 25px;
+		background-color: rgba(0, 0, 0, 0.6);
+		cursor: pointer;
+		font-size: 1.5em;
+		line-height: 1.1em;
+		color: white;
+		margin: 0 auto;
+		text-align: center;
+		font-style: bold;
+	}
+	.photoCount {
+		color: white;
+		//padding-left: 5px;
+		text-align: left;
+		margin-bottom: 0px;
+		margin-top: 4px;
+	}
+}
+	
+.capInstructionFrame {
+	position: absolute;
+	top: 82%;
+	left: 5%;
+	//width: 200px;
+	.capInstruction {
+		p {
+			color: white;
+			padding: 5px;
+			background-color: rgba(0, 0, 200, 0.6);
+		}
+	}
+		
+}
+	
+	
+.slideShowAd {
+	text-align: center;		
+}
+	
+	
+.hiddenPicId {
+	color: black;
+	font-size: .7em;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index:100;
+}
+
+.hiddenIFrame {
+	width: 1px;
+	height: 1px;
+	position: absolute !important;
+	top: -1000px !important;
+	left: -1000px !important;
+}
+
+.menu-icon-bar {
+	margin: 0 auto;
+	border: 2px solid white;
+	border-radius: 3px;
+	height: 35px;
+	width: 36px;
+	cursor: pointer;
+	position: absolute;
+	top: 83%;
+	left: 100%;
+	margin-left: -40px;
+}
+
+#menu-lines:before {
+	border-bottom: 13px double white;
+	border-top: 4px solid white;
+	content: "";
+	height: 15px;
+	padding: 2.5px;
+	position: absolute;
+	right: 3px;
+	top: 4px;
+	width: 26px;
+}
+.submitPhotoButton {
+	border: 2px solid white;
+	border-radius: 3px;
+	color: white;
+	padding: 5px 3px 7px 3px;
+	width: 160px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	top: 83%;
+	left: 100%;
+	margin-left: -205px;
+	background-color: #333333;
+}
+
+.bigSlideAddThis {
+	position: absolute;
+	left: 100%;
+	margin-left: -46px;
+
+	.bigSlideAddthis_toolbox {
+		margin-left: 0px;
+		width: 46px !important;
+		visibility: hidden;
+		z-index: 10;
+		/* default fallback */
+		background: rgb(255,255,255) transparent;
+		/* smart browsers */
+		background: rgba(255, 255, 255, 0);
+	}
+}
+	
+#myfacebook {
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 60000px) {
+	.visibleMobile {
+		display: none;
+	}
+}
+@media (min-width: 1px) and (max-width: 767px) {
+	.visibleMobile {
+		display: block;
+	}
+	.hideSSMobile {
+		display: none;
+	}
+	.photoBox {
+		width: 95% !important;
+	}
+	.moreSSWrap {
+		margin-top: 13% !important;
+		.viewMoreTitle {
+			font-size: 1.3em !important;
+		}
+	}
+}
+
+#popupcontent{
+	position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    border:1px solid #CCC;
+    background-color:#F9F9F9;
+    border:1px solid #333;
+    padding:5px;
+    text-align:center;
+    height: 0px;
+
+    .line1Text {
+    	font-size: 1.8em;
+    	margin-top: 10px;
+   	}
+   	.purchaseLink {
+   		margin-top: 15px;
+   		background-color: #428bca;
+   		border-radius: 5px;
+   		font-size: 1.6em;
+   		margin-left: 5%;
+   		margin-top: 10px;
+   		padding-bottom: 5px;
+   		padding-top: 5px;
+   		width: 90%;
+
+   		&:hover {
+   			background-color: #357ebd;
+   		}
+   		a {
+   			color: white;
+   			text-decoration: none;
+   		}
+   	}
+   	.closeButton {
+   		margin-top: 8px;
+   		position: absolute;
+   		left: 60%;
+   		top: 80%;
+   		width: 35%;
+   	}
+}
+
+
+
+/*************************************************************************
+	SLIDE SHOW DEVELOPMENT!!!!
+**************************************************************************/
+
+.ssDevelopment {
+	#bigSlideShowDev {
+
+		//display: none;
+		margin-top: .5%;
+		margin-bottom: 4px;
+		height: 790px;
+
+		.carousel-control {
+	        position: absolute;
+	        top: 40%;
+	        font-size: 4em;
+	        border: 0;
+	        z-index: 10;
+	        bottom: 30%;
+	    }
+			
+		.bigSlideShowCarInner {
+			height: 100%;
+			position: relative;
+			width: auto;
+
+			.bigSlideItem {
+				height: 100%;
+				text-align: center;
+				margin: 0 auto;
+
+				.bigSlideBox {
+					position: relative;
+					//text-align: center;
+					height: 100%;
+					width: auto;
+					//vertical-align: bottom;
+
+					img{
+						//position: absolute;
+						//z-index: 1;
+						height: 100%;
+					}
+
+					.bigSlideCaption {	
+						//z-index: 1;
+						color: white;
+						background-color: rgba(0, 0, 0, 0.6);
+						height: auto;
+						position: relative;
+						margin: 0 auto;
+						padding: 10px;
+						font-family: Arial;
+						font-size: 12px;
+						font-weight: normal;
+						line-height: 18px;
+
+						.hideCapDiv {
+							position: absolute;
+							border: 1px solid #777777;
+							color: #777777;
+							left: 0;
+							top: 100%;
+							height: 20px;
+							width: 70px;
+							margin-top: -24px;
+							font-size: 0.8em;
+							cursor: pointer;
+							background-color: #222222;
+						}
+					}
+					.moreSSWrap {
+						width: 76%;
+						margin-left: 12%;
+						margin-top: 5%;
+						.viewMoreTitle {
+							color:white;
+							font-size: 2em;
+						}
+					}
+				}
+			}
+			#moreSSSlide {
+				overflow: auto;
+			}
+		}
+	
+		.hideCaps {
+			position: absolute;
+			margin-top: -24px;
+			height: 20px;
+			background-color: black;
+			color: #555555;
+			font-size: 0.8em;
+			border: 1px solid #555555;
+			padding: 0px 2px;
+			cursor: pointer;
+		}
+
+		.swipeBox {
+			position: absolute;
+			width: 60%;
+			height: 80%;
+			top: 20%;
+			left: 20%;
+		}
+		.hideOverlayBox {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 100;
+		}
+		.showCapDiv {
+			position: absolute;
+			width: 18px;
+			height: 23px;
+			left: 10px;
+			top: 100%;
+			background-color: #333333;
+			color: white;
+			cursor: pointer;
+			margin-top: -23px;
+			display: none;
+			padding: 2px 4px 2px 4px;
+			border-radius: 2px;
+		}
+	}	
+
+	.ssTopMenuBar {
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		background-color: rgba(40, 40, 40, .8);
+		color: white;
+		top: 0px;
+		left: 0px; 
+		margin-top: -7px;
+		//margin-left: -15px;
+		padding-top: 10px;
+
+		.ssTitle {
+			font-size: 1.1em;
+			padding-left: 5%;
+		}
+
+		.ssMenu {
+			font-size: 1.1em;
+			text-align: right;
+			padding-right: 5%;
+
+			.ssMenuUL {
+				li {
+					list-style:none;
+					float:right;
+					display: block;
+					margin-top: 3px;
+				}
+
+				.ssSubmit{
+					a {
+						border-radius: 4px;
+						color: white;
+						text-decoration: none;
+						margin-right: 10px;
+						cursor: pointer;
+						padding: 8px;
+						&:hover {
+							color: black;
+							background-color: #dddddd;
+						}
+					}
+				}
+				.ssBack {
+					a {
+						border-radius: 4px;
+						color: white;
+						text-decoration: none;
+						margin-right: 10px;
+						cursor: pointer;
+						padding: 8px;
+						&:hover {
+							color: black;
+							background-color: #dddddd;
+						}
+					}
+				}
+				.ssHome {
+					a {
+						margin-right: 10px;
+						color: white;
+						text-decoration: none;
+						border-radius: 4px;
+						cursor: pointer;
+						padding: 8px;
+						&:hover {
+							color: black;
+							background-color: #dddddd;
+						}
+					}
+				}
+				.ssShare {
+					border-top-left-radius: 4px;
+					border-top-right-radius: 4px;
+					color: white;
+					text-decoration: none;
+					margin-right: 10px;
+					cursor: pointer;
+					padding: 8px;
+					margin-top: -5px;
+
+					&:hover {
+						color: black;
+						background-color: #dddddd;
+					}
+					&:hover ul {
+						display: block;
+					}
+
+					.ssShareDropdown {
+						background-color: #dddddd;
+						list-style: none;
+						width: 20%;
+						//margin-left: 60%;
+						padding-left: 5px;
+						display: none;
+						position:absolute;
+						border: none;
+						margin-top: 0px;
+
+						li {
+							width: 100%;
+							text-align: left;
+
+
+							a {
+								margin-left: -4px;
+
+								.fa-facebook-square {
+									color: #3b5998;
+								}
+								.fa-twitter-square {
+									color: #4099ff;
+								}
+								.fa-pinterest-square {
+									color: #c92228;
+								}
+								&:hover {
+									background-color: #ffffff;
+									color: #000000;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.topMenuBarMobile {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgba(40, 40, 40, .8);
+		color: white;
+
+		.mobileSSTitle {
+			padding-top: 2%;
+
+			.photoCount {
+				padding-left: 10px;
+			}
+		}
+		.navbar-collapse-SS {
+			border-top: none;
+			box-shadow: none;
+			background-color: #333333;
+			z-index: 200;
+
+			#mobileSSNav {
+				width: 40%;
+				margin-left: 55%;
+
+				li {
+					display: block;
+
+					a {
+						color:white;
+						&:hover {
+							color: #777777;
+						}
+					}
+					.sharingSS {
+						margin-top: 5px;
+
+						.ssAhref {
+							padding: 1px;
+							margin-top: 3px;
+							margin-right: 6px;
+							
+							#myfacebookMobile {
+								margin-top: 3px;
+								cursor: pointer;
+								background-color: #3b5998;
+							}
+							
+							
+							
+							.fa-stack {
+								color: white;
+								background-color: #333333;
+								text-align: center;
+							}	
+						}
+						a {
+							.ssPinterest {
+								background-color: #c92228 !important;
+							}
+							.ssTwitter {
+								background-color: #4099ff !important;
+							}
+						}
+					}
+				}
+
+				.dropdownDivider {
+					border-top: 2px solid #555555;
+				}
+			}
+		}
+	}
+		
+	.slideShowAd {
+		text-align: center;		
+	}
+		
+		
+	.hiddenPicId {
+		color: black;
+		font-size: .7em;
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		cursor: default;
+	}
+
+	.hiddenIFrame {
+		width: 1px;
+		height: 1px;
+		position: absolute !important;
+		top: -1000px !important;
+		left: -1000px !important;
+	}
+	.ads-slideshow > .container > .row > .adunit > div {
+		margin: 0 auto;
+	}
+
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+	.hideTextSmall {
+		display: none;
+	}
+}
+@media (min-width: 1px) and (max-width: 766px) {
+	.carousel-control {
+	    position: absolute;
+	    top: 60% !important;
+	    height: 10%;
+	    width: 5%;
+	    font-size: 2em !important;
+	    z-index: 10;
+	    background-color: #333333;
+	    border-radius: 10px;
+	    padding-top: 10px;
+	    border: 1px solid white;
+
+	}	
+}
+	
+	

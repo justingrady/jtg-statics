@@ -1,0 +1,195 @@
+.moreContent{
+    display: none;
+    margin:0;
+}
+
+.mobileViewAds {
+	display: none;
+	margin-bottom: 8px;
+}
+.MobileSubscribeButton {
+    display: none;
+}
+.MobileSubRateChart {
+    display:none;
+}
+
+.navbar-brand {
+    display:none;
+}
+.mobileSpacer {
+    display:none;
+}
+
+
+
+@media (min-width: 2px) and (max-width: 767px) {
+
+	.moreContent{
+        display: inline;
+    }
+
+    .moreContentBlock {
+        display: none;
+    }
+
+    .mobileViewAds {
+		display: inline;
+	}
+    .subOptions {
+        h3 {
+            font-size: 1.2em;
+        }
+    }
+
+    .frontPageBulletList {
+        font-size: 1.1em;
+    }
+
+    .ads-inline {
+        margin-bottom: 7px;
+    }
+    .frontpageContainer {
+        //margin-top: 0px !important;
+    }
+
+    #header .row {
+        //padding-bottom: 0px !important;
+    }
+    .areaTitle {
+        margin-left: -8px !important;
+        margin-right: -8px !important;
+    }
+    .article-content {
+        padding-left: 10px;
+    }
+    article {
+        margin-top: 5px !important;
+    }
+    .textDescBody {
+        clear:left;
+        padding-left:10px;
+    }
+    .weatherFore {
+        margin-left: 20px;
+    }
+    .weatherGrid {
+        height: auto;
+    }
+    .weatherAreaTitle {
+        margin-right: -3px !important;
+    }
+    .webCams {
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 95%;
+    }
+
+    /// ALL the mobile hides
+    .signIn {
+        display: none;
+    }
+    .rtRail {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .subscirptions {
+        display:none;
+    }
+    .theBulletin {
+        display: none;
+    }
+    .footer-subscribe {
+        dipslay: none;
+    }
+    .breadcrumb {
+        display: none;
+    }
+
+    .navbar-brand { 
+        display: block !important;
+    }
+
+    #homeCarousel {
+        display: none;
+    }
+    .slideShowViewButton {
+        font-size: .9em;
+        padding-left: 8px;
+        //margin-left: 2px;
+    }
+    .myCapButton {
+        font-size: .9em;
+        padding: 3px;
+    }
+    #toolbox {
+        display: none;
+    }
+    .mobileSpacer {
+        display:block;
+        margin-bottom: 10px;
+    }
+    .breakingHeadlineText {
+        margin-bottom: 5px;
+        a {
+            font-size: 1em !important;
+        }
+    }
+    .breakingStoryPub {
+        margin-bottom: 8px !important;
+        margin-top: 8px !important;
+        font-size: .8em !important;
+    }
+    .breakingNoPicText {
+        a {
+            font-size: 1.5em !important;
+        }
+
+    }
+    .breakingSingleColumnStyle {
+        min-height: 20px !important;
+    }
+    .breakingTwoColumnStyle {
+        min-height: 20px !important;
+        .breaking-media {
+
+            .media-body {
+                min-height: 50px !important;
+                width: 95% !important;
+                margin-left: 0px !important;
+
+                p {
+                    a{
+                        color: #428BCA !important;
+                    }
+                }
+            }
+        }
+    }
+    .breakingThreeColumnStyle {
+        min-height: 20px !important;
+        .breaking-media {
+
+            .media-body {
+                min-height: 50px !important;
+                width: 95% !important;
+                margin-left: 0px !important;
+                p {
+                    a{
+                        color: #428BCA !important;
+                    }
+                }
+            }
+        }
+    }
+    .rmThumb {
+        display: none;
+    }
+    .breakingSepLine {
+        border-bottom: 1px solid #ddd;
+        padding-top: 3px;
+    }
+
+}

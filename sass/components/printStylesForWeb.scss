@@ -1,0 +1,301 @@
+$normal: 1em;
+$big: 1.3em;
+$bigger: 1.6em;
+$huge: 2em;
+$small: .8em;
+$tiny: .5em;
+
+.Chapter {
+	font-weight: bold !important;
+}
+
+.Newstext_bold {
+	font-weight: bold;
+}
+
+.hd4_FOR {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.Byline_1_name {
+	font-weight: bold;
+}
+
+.Byline_2_service {
+	font-style: italic;
+}
+.Byline_package_1 {
+	font-weight: bold;
+}
+.Byline_package_2 {
+	font-style: italic;
+}
+
+.Chapter_head {
+	font-weight: bold;
+	//font-size: $bigger;
+}
+
+.GO_event_day {
+	font-weight: bold;
+}
+
+.GO_Out_of_Town_colon {
+	font-weight: bold;
+}
+
+.GO_submit_tag {
+	
+}
+
+.hd1_Frutiger_77 {
+	font-weight: bold;
+	font-size: $huge;
+}
+
+.hd2_light_Frutiger_47 {
+	font-weight: bold;
+	font-size: $bigger;
+}
+
+.hd3_subhead {
+	font-weight: bold;
+	font-size: $bigger;
+}
+.hd3_subhead_bold_67_lead-in {
+	font-weight: bold;
+	font-size: $bigger;
+}
+
+.hd4_FOR_BRIEFS_AND_LETTERS_ONLY{
+	font-weight: bold;
+}
+
+.hd5_columns {
+	font-weight: bold;
+	font-size: $bigger;
+}
+
+.hd6_Palatino {
+	font-weight: bold;
+	font-size: $bigger;
+}
+.hd6_Palatino_all_caps_gray {
+	font-weight: bold;
+	font-size: $bigger;
+}
+
+.hd7_Glypha_45_light {
+	font-weight: bold;
+	font-size: $bigger;
+}
+
+.hd7_Glypha_65_bold {
+	font-weight: bold;
+	font-size: $bigger;
+}
+.hd7_Glypha_75_black {
+	font-weight: bold;
+	font-size: $bigger;
+}
+.hd8_Brief_heads_for_rails {
+	font-weight: bold;
+}
+
+.Kicker {
+	font-weight: bold;
+}
+
+.Letter_name_1 {
+	font-weight: bold;
+}
+.Letter_name_2 {
+	font-style: italic;
+}
+
+.News_kicker {
+	font-weight: bold;
+}
+.News_kicker_bw {
+	font-weight: bold;
+}
+.News_kicker_obit_tombstone {
+	font-weight: bold;
+}
+
+.News_of_Record_head {
+	font-weight: bold;
+}
+
+.News_of_Record_head_secondary {
+	font-weight: bold;
+}
+.News_of_Record_Biz {
+	font-weight: bold;
+}
+.News_of_Record_ComLife {
+	font-weight: normal;
+}
+.News_of_Record_Local {
+	//font-weight: bold;
+}
+.News_of_Record_Milestones {
+	font-weight: bold;
+}
+
+.note {
+	font-style: italic;
+}
+
+p.Newstext {
+	clear: none !important;
+}
+
+p.Record_ComLife {
+	clear: none !important;
+}
+
+p.Newstext_QandA:first-letter {
+	font-weight: bold;
+	font-size: 1.2em;
+
+}
+
+.Newstext_italic {
+	font-style: italic;
+}
+
+.Newstext_score {
+	font-weight: bold;
+}
+.Newstext_score_BRIEF {
+	font-weight: bold;
+}
+
+.Newstext_tagline {
+	font-style: italic;
+}
+
+.Photo_credit {
+	text-align: right;
+}
+.Photo_credit_sidesaddle {
+	text-align: right;
+}
+
+.Photo_wildart_head {
+	font-weight: bold;
+}
+
+.Recipe_1_head {
+	font_weight: bold;
+}
+
+.Recipe_3_ingredients {
+	font_weight: bold;
+}
+
+.Recipe_6_tagline {
+	font-style: italic;
+}
+
+.Scoreboard_head {
+	font-weight: bold;
+	font-size: $bigger;
+}
+
+.Sigs_bugs {
+	font-weight: bold;
+	font-size: $bigger;
+}
+
+.Sports_brief_heads {
+	font-weight: bold;
+}
+.Sports_brief_heads_for_rails {
+	font-weight: bold;
+}
+
+p.Toolbox_inset {
+	clear: none !important;
+}
+
+p.Toolbox_inset_QandA:first-letter {
+	font-weight: bold;
+	font-size: 1.2em;
+
+}
+p.QandA:first-letter {
+	font-weight: bold;
+	font-size: 1.2em;
+
+}
+
+.Toolbox_inset_tagline {
+	font-style: italic;
+}
+
+p.Toolbox_history_highlights:first-word {
+	font-weight: bold;
+}
+
+.Toolbox_head {
+	font-weight: bold;
+	font-size: $big;
+}
+
+.Toolbox_head_secondary {
+	font-size: $normal;
+	font-weight: bold;
+}
+
+.Toolbox_source {
+	font-size: $small;
+}
+
+.WashWeek_votes {
+	font-style: italic;
+}
+
+.head {
+	font-weight: bold;
+}
+
+.times_theaters {
+	font-weight: bold;
+}
+
+.times_heads {
+	font-weight: bold;
+}
+
+.News_movie_times_heads {
+	background-color: grey;
+	padding: 3px;
+	padding-left: 10px;
+	color: white;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.News_movie_times_theaters {
+	font-style: italic;
+	padding-bottom: 5px;
+	border-style:none;
+	border-bottom: thin dashed #aaaaaa;
+}
+
+.News_movie_times_notes {
+	font-size: .8em;
+	margin-bottom: 0px;
+	padding-left: 20px;
+	font-style: italic;
+}
+.News_movie_times {
+	margin-left: 20px;
+}
+
+
+
+
